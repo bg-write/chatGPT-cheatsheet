@@ -272,11 +272,17 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 
 [Return to top](#top)
 
-ChatGPT's API Documentation: <https://platform.openai.com/>
+ChatGPT's Overall API Documentation: <https://platform.openai.com/>
 
-<!-- ### [Chat completions](https://platform.openai.com/docs/guides/chat)
+OpenAI's Playground (to test out completions): <https://platform.openai.com/playground>
 
-NOTE: Only useable for paid versions `gpt-3.5-turbo` and `gpt-4`. -->
+ChatGPT API library (Python): <https://platform.openai.com/docs/libraries/python-bindings>
+
+ChatGPT API library (Node.js): <https://platform.openai.com/docs/libraries/node-js-library>
+
+ChatGPT API Community libraries (multiple languages): <https://platform.openai.com/docs/libraries/community-libraries>
+
+ChatGPT API Application Examples: <https://platform.openai.com/examples>
 
 ![ChatGPT 101](https://doodleipsum.com/700?i=95776567c40a23a5a07a8f0a93add37d)
 
