@@ -8,7 +8,7 @@
 
 ## Table of Contents
 
-- What to Know Before Getting Started (Who is This Guide For?)
+- Getting Started (Who is This Guide For?)
 - AI Overview
 - Machine Learning Overview
 - ChatGPT Overview
@@ -19,7 +19,7 @@
 
 ---
 
-## What to Know Before Getting Started (Who is This Guide For?)
+## Getting Started (Who is This Guide For?)
 
 [Return to top](#top)
 
@@ -33,7 +33,7 @@ ChatGPT is a computer grogram that can understand and generate human-like langua
 
 ChatGPT is a state-of-the-art, large-scale natural language processing model based on the Transformer architecture, which can generate human-like text and perform various language-related tasks with high accuracy.
 
-(This time, I asked ChatGPT to sum itself up in one sentence to someone already experienced in AI and machine learning. Pretty cool, right?)
+(This time, I asked ChatGPT to sum itself up in one sentence to an expert. Pretty cool, right?)
 
 ### ChatGPT (and AI and Machine Learning) Explained in One Minute
 
@@ -62,6 +62,8 @@ Someone interested in learning the basics of AI, Machine Learning, and ChatGPT, 
 ### Why You Should Learn the Basics of AI (Even if You Don't Code or Care)
 
 ChatGPT is incredible at creating many different types of content. If your current job involves creating or editing any kind of content, becoming comfortable with AI (and knowing its strengths and weaknesses) can only help you. It's already a cliche and it's true: AI will not eliminate your job, but it will likely change your job.
+
+Another thing I remind myself when it comes to new tools that make my coding life easier: being a great developer means being a great problem solver. The users who will get the most out of ChatGPT are the ones most interested in solving problems and asking smart and informed questions. This is also an opportunity to develop your skills as a problem solver and think of more thoughtful and creative questions to think about when approaching problems.
 
 ### Why Was This Repo Written in Python?
 
@@ -121,32 +123,25 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 
 [Return to top](#top)
 
-### Two Metaphors to Help Visualize What ChatGPT Can (and Can't) Do
+### Metaphors to Help Visualize What ChatGPT Can (and Can't) Do
 
-- ChatGPT is like **a very tech-savvy intern**. It's helpful when assisting you in work that you can do yourself but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check on your own, you're in good hands.
-- If a tool or language's documentation is like its sacred text, ChatGPT is like its **pastor or priest** who interprets and conveys the text (and should only be taken with a grain of salt).
+- **ChatGPT is like a very tech-savvy intern**. It's helpful when assisting you in work that you can do on your own but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check on your own, you're in good hands.
+- If the Internet is like a sacred text, **ChatGPT is like a rabbi, mullah, or priest of the information found on the Internet**. ChatGPT interprets and conveys information available on the Internet in a way that's easy to read and digest. This communication can help visualize and break-down ideas, but they should be taken with a grain of salt and should not be a substitute for your own knowledge.
+- **ChatGPT is like a very knowledgeable person**. This is not the same thing as being a very smart person, or a wise person. ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers; ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it. This is where the famous expression "garbage in, garbage out" comes into play.
 
-### How NOT to Use ChatGPT
+---
 
-- Ask for code snippets ... only to then copy and paste it into your project
-- When you have no questions; ChatGPT doesn't respond well to statements.
+### ChatGPT Prompt Categories & Examples to Get You Started (with Sources)
 
-### How TO Use ChatGPT
-
-- Write your prompt in the form of a question or request.
-- Ask for basic code as a reference (but again, don't copy and paste).
-- Ask to review your code.
-- Ask to quiz you on your knowledge of any specific tools or languages.
-- Give it coding challenges or interview questions. (NOTE: avoid doing this during an interview, unless you've been given an explicit OK to use ChatGPT.)
-
-### ChatGPT Prompt Categories & Example to Get You Started (with Sources)
-
-#### General Learning, Troubleshooting, or Brainstorming
+#### General Learning, Troubleshooting, Or Brainstorming
 
 - What are the top 3 books for learning Java? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - What are the key takeaways from BOOK? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+- What does WORD mean?
+  - Now give me a synonym.
+  - Now use it in 10 sentences. ([Santrel](https://youtu.be/jHv63Uvk5VA))
 - How do I become a front-end developer? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- I want to hire a graphic designer to design my website. We've agreed that they will deliver the first draft in two weeks and offer three iterations free of charge. Any iteration after will be charged at $50/hour. Write a contract for us. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)) (Obviously run any contracts you'll actually use by a real-life lawyer first.) ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+- I want to hire a graphic designer to design my website. We've agreed that they will deliver the first draft in two weeks and offer three iterations free of charge. Any iteration after will be charged at $50/hour. Write a contract for us. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)) (Obviously run any contracts you'll actually use by a real-life lawyer first.)
 - Write an email to my boss asking for a raise. I've worked at this company for 2 years and successfully delivered several projects on time. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - I want to learn about the fetch API. What are the steps that I should take?
   - Tell me more about #2.
@@ -156,6 +151,15 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
   - What about YouTube videos? ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 - Give me some ideas for an app that uses the geolocation API.
   - Tell me more about #3. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+
+#### Creating Your Own Study Guide
+
+- Give me a study plan to learn Python for data science with resources and a timeline. ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
+- Act as a coding tutor that creates study plans to help people learn to code. You will be provided with the goal of the student, their time commitment, and resource preferences. You will create a study plan with timelines and links to resources. Only include relevant resources because time is limited. My first request: "I want to become a data scientist but I do not know how to code. I can study 10 hours per week and only want video resources. I want to learn to code in Python. Create a study plan for me." ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
+
+#### Generating Project Ideas
+
+- Act as an expert data scientist and create an exploratory data analysis Python data science project about Naruto the anime. ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
 
 #### Preparing For A Job Interview
 
@@ -167,6 +171,17 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 - Can you give me an HTML question about accessibility? ([Web Dev Simplified](https://www.youtube.com/watch?v=Btc9sRIu2jw))
 - Explain JavaScript like I'm a 5-year-old. ([Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A))
 - What are the three most important concepts to know in React.js? ([Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A))
+
+#### Working In Excel
+
+- Write an Excel formula to add up values in cells B2 through B10.
+  - Can you explain how this function works? ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
+- Write an Excel formula to calculate the profit. The revenue is in cell A2 and the cost is in B2. ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
+- Write an Excel formula to find "Sugar Cookie" in a table and return the price.
+  - Can I use any other functions? ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
+- Write an Excel formula to extract all the text before the @ character in cell A2. ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
+- Write an Excel formula to count the number of unique values in a list. ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
+- Write an Excel macro to send emails. Use the following subject: "Kevin Cookie Company Invoice." Use the following text: "You owe the Kevin Cookie Company X." Take the value X from column A. Send it to the email address listed in column B. ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
 
 #### Writing Shell (Linux) Commands
 
@@ -180,6 +195,11 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 
 - How can I improve this code? [Then paste code.] ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Can you provide some feedback on this code (then paste the code). ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+
+#### Extracting Data
+
+- Based on this Wikipedia article, when was the first Model T made? [paste in the article text or wiki url]
+  -Now output that as a Python variable. ([Santrel](https://youtu.be/jHv63Uvk5VA))
 
 #### Generating Dummy Data
 
@@ -202,7 +222,7 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 
 - Can you generate a unit test for the searchStates function using JEST? [Paste in code.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### Building an API
+#### Building An API
 
 - I need an API built with Express.js to return the list of products. Each product should have attributes like ID, title, description, price, and imageURL.
   - Modify the code and retrieve the products from a MongoDB database
@@ -252,13 +272,9 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 
 [Return to top](#top)
 
-API documentation in the works (requires to pay for ChatGPT)
-
-<!-- ### ChatGPT's API
-
 ChatGPT's API Documentation: <https://platform.openai.com/>
 
-#### [Chat completions](https://platform.openai.com/docs/guides/chat)
+<!-- ### [Chat completions](https://platform.openai.com/docs/guides/chat)
 
 NOTE: Only useable for paid versions `gpt-3.5-turbo` and `gpt-4`. -->
 
@@ -268,7 +284,20 @@ NOTE: Only useable for paid versions `gpt-3.5-turbo` and `gpt-4`. -->
 
 [Return to top](#top)
 
-A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [Traversy](https://www.youtube.com/watch?v=o_joulYVndM), [Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc), [Web Dev Simplified](https://www.youtube.com/watch?v=Btc9sRIu2jw), [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A), and [Beyond Fireship](https://www.youtube.com/watch?v=e2uvhJ7r1UQ). Doodles by [Doodle Ipsum](https://doodleipsum.com/).
+A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT.
+
+Cited videos by:
+
+- [Traversy](https://www.youtube.com/watch?v=o_joulYVndM)
+- [Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)
+- [Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s)
+- [Santrel](https://youtu.be/jHv63Uvk5VA)
+- [Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs)
+- [Web Dev Simplified](https://www.youtube.com/watch?v=Btc9sRIu2jw)
+- [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A)
+- [Beyond Fireship](https://www.youtube.com/watch?v=e2uvhJ7r1UQ)
+
+Doodles by [Doodle Ipsum](https://doodleipsum.com/).
 
 ---
 
