@@ -272,7 +272,7 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 
 [Return to top](#top)
 
-ChatGPT's Overall API Documentation: <https://platform.openai.com/>
+ChatGPT's Overall API Documentation (and where you can keep track of how many tokens you've used so ar): <https://platform.openai.com/>
 
 OpenAI's Playground (to test out completions): <https://platform.openai.com/playground>
 
