@@ -290,7 +290,7 @@ ChatGPT API Application Examples: <https://platform.openai.com/examples>
 
 [Return to top](#top)
 
-A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE)'s video helped me get started with ChatGPT's API in Python and [Gradio](https://www.gradio.app/).
+A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and [Gradio](https://www.gradio.app/). There's an additional [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) video that goes over the basics of creating a chatbot with JavaScript instead of Python.
 
 Cited videos by:
 
