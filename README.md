@@ -290,7 +290,7 @@ ChatGPT API Application Examples: <https://platform.openai.com/examples>
 
 [Return to top](#top)
 
-A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT.
+A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE)'s video was helpful in helping me get started with playing with the ChatGPT API in Python.
 
 Cited videos by:
 
