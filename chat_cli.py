@@ -1,8 +1,6 @@
 '''A chatbot that works in your command line interface.'''
 import os
-# pip install openai
 import openai
-# pip install python-dotenv (assuming you place key in an env)
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -43,5 +41,3 @@ def chatbot():
 
 if __name__ == '__main__':
     chatbot()
-
-# click "control + c" to exit out of the chat and restart

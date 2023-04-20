@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-# ChatGPT, AI & Machine Learning: How to Get Started (and Not Be Afraid)
+# ChatGPT: How to Get Started (and Not Be Afraid)
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
@@ -8,132 +8,147 @@
 
 ## Table of Contents
 
-- Getting Started (Who is This Guide For?)
-- AI Overview
-- Machine Learning Overview
-- ChatGPT Overview
-- Getting Started With ChatGPT (On Your Computer)
-- ChatGPT For Newbies
-- ChatGPT's API (For Developers)
+I. Introduction
+
+- Overview of ChatGPT
+- Project goals and intended audience
+
+II. Getting Started
+
+- System requirements
+- Installing dependencies
+- Running the code
+
+III. Usage
+
+- Overview of features
+- Using "chat_cli.py"
+- Using "chat_ui.py"
+- Examples of commands and interface walkthroughs
+
+IV. Example ChatGPT Prompts
+
+- TBD
+- TBD
+
+V. API Reference
+
+- Overview of the OpenAI API
+- Obtaining an API key
+- Examples of API usage
+
+VI. Contributing
+
+- Bug reporting
+- Feature requests
+- Pull requests
+
+VII. Legal Notices
+
+- License information
 - Closing Credits
 
----
-
-## Getting Started (Who is This Guide For?)
+## I. Introduction
 
 [Return to top](#top)
 
-### ChatGPT Explained in One Sentence (to a Newbie)
+### Overview of ChatGPT
 
-ChatGPT is a computer grogram that can understand and generate human-like language to have conversations with people.
+ChatGPT is a computer program that can understand and generate human-like language to have conversations with people. (This is the answer I got when I asked ChatGPT to explain itself in one sentence to someone who knows nothing about ChatGPT or AI.)
 
-(NOTE: This is the answer I got when I asked ChatGPT to explain itself in one sentence to someone who knows nothing about ChatGPT or AI.)
+How about a more specific definition?
 
-### ChatGPT Explained in One Sentence (to an Experienced Engineer)
+ChatGPT is a state-of-the-art, large-scale natural language processing model based on the Transformer architecture, which can generate human-like text and perform various language-related tasks with high accuracy. (This time, I asked ChatGPT to sum itself up in one sentence to an AI and machine learning expert. Pretty cool, right?)
 
-ChatGPT is a state-of-the-art, large-scale natural language processing model based on the Transformer architecture, which can generate human-like text and perform various language-related tasks with high accuracy.
-
-(This time, I asked ChatGPT to sum itself up in one sentence to an expert. Pretty cool, right?)
-
-### ChatGPT (and AI and Machine Learning) Explained in One Minute
+But what are AI and machine learning?
 
 **AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence.
 
 **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed.
 
-**ChatGPT** is a particular machine learning model that has been trained on a large corpus of text data to generate human-like responses and carry out natural language processing tasks.
+So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a large corpus of text data to generate human-like responses and carry out natural language processing tasks.
 
-<!-- ### The Problem
+There are a few different ways to look at ChatGPT. Here are a few metaphors that I like as of this writing.
 
-TBD
+#### ChatGPT is like a very tech-savvy intern
 
-### The Solution
+It's helpful when assisting you in work that you can do on your own but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check on your own, you're in good hands.
 
-TBD
+#### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
 
-### The Goal
+If the Internet is like a sacred text, ChatGPT is like a rabbi, mullah, or priest of the information found on the Internet. ChatGPT interprets and conveys information available on the Internet in a way that's easy to read and digest. This communication can help visualize and break-down ideas, but they should be taken with a grain of salt and should not be a substitute for your own knowledge.
 
-TBD -->
+#### ChatGPT is like a very knowledgeable person (but who's not very smart)
 
-### The Ideal User of This Guide
+This is not the same thing as being a very smart person, or a wise person. ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers; ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it. This is where the famous expression "garbage in, garbage out" comes into play.
 
-Someone interested in learning the basics of AI, Machine Learning, and ChatGPT, even out of the fear that if you don't learn it, you'll lose your job. (More on that in the next paragraph.)
+### Project goals and intended audience
 
-### Why You Should Learn the Basics of AI (Even if You Don't Code or Care)
+The goal of this project is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you're a non-developer using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
 
-ChatGPT is incredible at creating many different types of content. If your current job involves creating or editing any kind of content, becoming comfortable with AI (and knowing its strengths and weaknesses) can only help you. It's already a cliche and it's true: AI will not eliminate your job, but it will likely change your job.
+## II. Getting Started
 
-Another thing I remind myself when it comes to new tools that make my coding life easier: being a great developer means being a great problem solver. The users who will get the most out of ChatGPT are the ones most interested in solving problems and asking smart and informed questions. This is also an opportunity to develop your skills as a problem solver and think of more thoughtful and creative questions to think about when approaching problems.
+### System requirements
 
-### Why Was This Repo Written in Python?
+ChatGPT for MacOS:
 
-Python is one of my favorite languages! Python also works well with a lot of data analysis and machine learning examples that I'll be using in this guide.
+ChatGPT for Windows:
 
-### Can I Use ChatGPT with JavaScript or other languages?
-
-Yes, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) did a great video on using ChatGPT to build a "Hello, World" React app. You can use ChatGPT with any language!
-
-### Will This Repo be Outdated by the Time I Read This?
-
-In some ways, yes. I'll try to keep this guide as updated as possible. The goal, however, is to introduce high-level concepts to ChatGPT that will remain consistent with each new release. I'll try to note when there are important differences to know between versions.
-
-To see all updates added to ChatGPT so far, please refer to its release notes: <https://help.openai.com/en/articles/6825453-chatgpt-release-notes>
-
-![ChatGPT 101](https://doodleipsum.com/700?i=934094fdf9650619886d1f1d9e713132)
-
-## AI Overview
-
-[Return to top](#top)
-
-TBD
-
----
-
-## Machine Learning Overview
-
-[Return to top](#top)
-
-TBD
-
----
-
-## ChatGPT Overview
-
-[Return to top](#top)
-
-TBD
-
-![ChatGPT 101](https://doodleipsum.com/700?i=ac5fcbd004e4a4496dc975c10f7af6be)
-
-## Getting Started With ChatGPT (On Your Computer)
-
-[Return to top](#top)
+ChatGPT for Linux:
 
 OpenAI's ChatGPT Home Page: <https://openai.com/blog/chatgpt>
 
 ChatGPT's Landing Page (you'll need to log in with your OpenAI account or sign up for free): <https://chat.openai.com/auth/login>
 
-### What ChatGPT Version am I Using?
+Regarding of your system, in order to access OpenAI's ChatGPT home page and the ChatGPT landing page, you just need a working web browser.
 
-For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid version, but this guide focuses on the very basics for newcomers. (NOTE: We'll be using GPT-4 in the section "ChatGPT For Developers," but that section is still being written!)
+For the sake of simplicity and accessibility, we'll be sticking to using GPT-3. GPT-4 is available now but only in beta mode; this guide will be updated once GPT-4 and future versions are more widely available.
 
-![ChatGPT 101](https://doodleipsum.com/700?i=c4ede553eeb0e7df9f4e8b16bd8cae24)
+IMPORTANT: Be mindful of everything you ask and send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store.
 
-## ChatGPT For Newbies
+### Installing dependencies
 
-[Return to top](#top)
+Both chatbot example files found in this repo are written in Python, so you'll need to download the latest version of Python.
 
-### Metaphors to Help Visualize What ChatGPT Can (and Can't) Do
+Make sure to check out OpenAI's quickstart guide to ChatGPT in Python for help with installing and setting up Python: XXX
 
-- **ChatGPT is like a very tech-savvy intern**. It's helpful when assisting you in work that you can do on your own but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check on your own, you're in good hands.
-- If the Internet is like a sacred text, **ChatGPT is like a rabbi, mullah, or priest of the information found on the Internet**. ChatGPT interprets and conveys information available on the Internet in a way that's easy to read and digest. This communication can help visualize and break-down ideas, but they should be taken with a grain of salt and should not be a substitute for your own knowledge.
-- **ChatGPT is like a very knowledgeable person**. This is not the same thing as being a very smart person, or a wise person. ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers; ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it. This is where the famous expression "garbage in, garbage out" comes into play.
+You'll also need to download the OpenAI library. I also downloaded Gradio, which is not required but is the UI library I'm using to locally deploy our chatbot. For security and safety, I also downloaded python-dotenv to keep my OpenAI API key hidden.
 
----
+Though this repo focuses on Python, you can use OpenAI's API in other languages. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) did a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video going over the basics of creating a chatbot with vanilla JavaScript.
 
-### ChatGPT Prompt Categories & Examples to Get You Started (with Sources)
+### Running the code
 
-#### General Learning, Troubleshooting, Or Brainstorming
+In either .py file, in the terminal, run the python command and the name of the file to start the app.
+
+i.e. "> python chat_cli.py" or "> python chat_ui.py"
+
+The terminal will provide next steps for you and how to view your results.
+
+When you wish to exit out of the chat to then restart the program, on your keyboard, click "control + c."
+
+## III. Usage
+
+### Overview of features
+
+ChatGPT is also constantly changing and updating. To see all updates made to ChatGPT so far, please refer to its release notes: <https://help.openai.com/en/articles/6825453-chatgpt-release-notes>
+
+### Using "chat_cli.py" (Using ChatGPT to build a command line app)
+
+As of this writing, I'm using the API model version "gpt-3.5-turbo."
+
+### Using "chat_ui.py" (Using ChatGPT to build an app you can view on your web browser)
+
+As of this writing, I'm using the API model version "gpt-3.5-turbo."
+
+### Examples of commands and interface walkthroughs
+
+TBD
+
+## IV. Example ChatGPT Prompts
+
+There are so many ways you can ask and use ChatGPT. Below are some examples I've especially love and where I found them.
+
+### General Learning, Troubleshooting, Or Brainstorming
 
 - What are the top 3 books for learning Java? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - What are the key takeaways from BOOK? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
@@ -152,16 +167,16 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 - Give me some ideas for an app that uses the geolocation API.
   - Tell me more about #3. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### Creating Your Own Study Guide
+### Creating Your Own Study Guide
 
 - Give me a study plan to learn Python for data science with resources and a timeline. ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
 - Act as a coding tutor that creates study plans to help people learn to code. You will be provided with the goal of the student, their time commitment, and resource preferences. You will create a study plan with timelines and links to resources. Only include relevant resources because time is limited. My first request: "I want to become a data scientist but I do not know how to code. I can study 10 hours per week and only want video resources. I want to learn to code in Python. Create a study plan for me." ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
 
-#### Generating Project Ideas
+### Generating Project Ideas
 
 - Act as an expert data scientist and create an exploratory data analysis Python data science project about Naruto the anime. ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
 
-#### Preparing For A Job Interview
+### Preparing For A Job Interview
 
 - I have three years of experience coding in HTML, CSS, and JavaScript. Write a resume for me. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - I'm applying for a front-end engineer role at COMPANY. Write a cover letter for me. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
@@ -172,7 +187,7 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 - Explain JavaScript like I'm a 5-year-old. ([Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A))
 - What are the three most important concepts to know in React.js? ([Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A))
 
-#### Working In Excel
+### Working In Excel
 
 - Write an Excel formula to add up values in cells B2 through B10.
   - Can you explain how this function works? ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
@@ -183,25 +198,25 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 - Write an Excel formula to count the number of unique values in a list. ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
 - Write an Excel macro to send emails. Use the following subject: "Kevin Cookie Company Invoice." Use the following text: "You owe the Kevin Cookie Company X." Take the value X from column A. Send it to the email address listed in column B. ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
 
-#### Writing Shell (Linux) Commands
+### Writing Shell (Linux) Commands
 
 - Write a bash command to find the name of all jpeg files in a directory and write them all to a text file. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
-#### Writing Git Commands
+### Writing Git Commands
 
 - How do I know how many lines of code I've committed to a Git repository? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
-#### Improving Code & Getting Feedback
+### Improving Code & Getting Feedback
 
 - How can I improve this code? [Then paste code.] ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Can you provide some feedback on this code (then paste the code). ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### Extracting Data
+### Extracting Data
 
 - Based on this Wikipedia article, when was the first Model T made? [paste in the article text or wiki url]
   -Now output that as a Python variable. ([Santrel](https://youtu.be/jHv63Uvk5VA))
 
-#### Generating Dummy Data
+### Generating Dummy Data
 
 - Generate dummy data for a table called Customers. Each customer should have an ID, first name, last name, and city. I don't need a Python script. Just give me the data.
   - Create a Python class for storing these objects. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
@@ -209,31 +224,31 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
   - Take out the programming languages field.
   - Give me the same data in XML. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### Generating Documentation
+### Generating Documentation
 
 - Generate the documentation for this API [paste GitHub repo URL]. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### Understanding and Fixing Errors
+### Understanding and Fixing Errors
 
 - Uncaught TypeError: Cannot read property 'bar' of undefined ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Can you tell me what this error message means and how to fix it? [paste code and error message.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### Writing Tests
+### Writing Tests
 
 - Can you generate a unit test for the searchStates function using JEST? [Paste in code.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### Building An API
+### Building An API
 
 - I need an API built with Express.js to return the list of products. Each product should have attributes like ID, title, description, price, and imageURL.
   - Modify the code and retrieve the products from a MongoDB database
   - Use TypeScript in this code
   - Generate this API using Python and FastAPI ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
-#### Natural Language Programming
+### Natural Language Programming
 
 - I need a REST API built with Rust. It should have products with the fields of id, name, description, and category_id. The category_id should have a relationship with another resource called categories. Categories should have an id and a name field. Let's use an SQLite database. Use any frameworks and libraries that you see fit. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### Python Examples
+### Python Examples
 
 - Write a python function for generating a random password
   - What does [line of code I don't understand] do in this code?
@@ -243,14 +258,14 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
 - How can I scrape a web page using Python? ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 - Give me a function to convert c to f in Python. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### HTML, CSS, and JavaScript Examples
+### HTML, CSS, and JavaScript Examples
 
 - Write the HTML and CSS code for displaying a card. Add a button below the card content. When I hover my mouse over the card, I want the card to slightly slide up.
   - Can you rewrite this code using TailwindCSS?
   - When I click on the button, send an HTTP request to /api/products. Instead of the fetch API, use Axios. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - I need the HTML and CSS in separate files for a blog homepage with a navbar with a logo on the left and links on the right. A hero area with a background image and centered text. Under that should be 3 cards in a horizontal flexbox. The cards should have light gray background and a box shadow. Use light blues and greens and use the poppies font. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
-#### React Examples
+### React Examples
 
 - Create a React component for displaying a card
   - Deconstruct the props parameter ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
@@ -259,18 +274,16 @@ For simplicity sake, I'm sticking to the free GPT-3. GPT-4 is the advanced paid 
   - Now write a test for this app using Playwright.
   - Document this code. ([Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A))
 
-#### SQL Examples
+### SQL Examples
 
 - Write an SQL query to generate a table called products with 4 columns ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Write an SQL query to generate a table called products with these columns: Id (int), Title (string), Category (int), unitPrice (float), and imageUrl (string) ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Write an SQL query to retrieve the top 5 customers in Manhattan
   - Revise this query and join the customers table with the orders table to find out how much each customer has spent. Then pick the top 5 who have spent the most. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
-![ChatGPT 101](https://doodleipsum.com/700?i=caffe290950cc7d4d508bb5755421d7f)
+## V. API Reference
 
-## ChatGPT's API (For Developers)
-
-[Return to top](#top)
+### Overview of the OpenAI API
 
 ChatGPT's Overall API Documentation (and where you can keep track of how many tokens you've used so ar): <https://platform.openai.com/>
 
@@ -284,13 +297,37 @@ ChatGPT API Community libraries (multiple languages): <https://platform.openai.c
 
 ChatGPT API Application Examples: <https://platform.openai.com/examples>
 
-![ChatGPT 101](https://doodleipsum.com/700?i=95776567c40a23a5a07a8f0a93add37d)
+### Obtaining an API key
 
-## Closing Credits
+TBD
 
-[Return to top](#top)
+### Examples of API usage
 
-A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and [Gradio](https://www.gradio.app/). There's an additional [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) video that goes over the basics of creating a chatbot with JavaScript instead of Python.
+TBD
+
+## VI. Contributing
+
+### Bug reporting
+
+TBD
+
+### Feature requests
+
+TBD
+
+### Pull requests
+
+TBD
+
+## VII. Legal Notices
+
+### License information
+
+TBD
+
+### Closing Credits
+
+A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and [Gradio](https://www.gradio.app/).
 
 Cited videos by:
 
@@ -308,5 +345,3 @@ Doodles by [Doodle Ipsum](https://doodleipsum.com/).
 ---
 
 © 2023 Brady Gerber. All Rights Reserved.
-
-[Return to top](#top)
