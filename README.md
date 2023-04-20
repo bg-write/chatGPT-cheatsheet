@@ -22,7 +22,6 @@ II. [Getting Started](#getting-started)
 III. [Usage](#usage)
 
 - Overview of features
-- Examples of commands and interface walkthroughs
 - Using `chat_cli.py` (ChatGPT in the command line)
 - Using `chat_ui.py` (ChatGPT deployed on localhost)
 
@@ -121,6 +120,7 @@ ChatGPT
 
 - [A free OpenAI account](https://openai.com/blog/chatgpt)
 - A web browser with secure internet
+- NOTE: Sometimes when using ChatGPT on the web, if I don't use it after a few minutes, I'll get errors with each new prompt I try to enter. Simply refreshing my web browser fixes the issue.
 
 Mac
 
@@ -179,11 +179,14 @@ When you want to exit out of the chat, on your keyboard, do `control + c`.
 
 ### Overview of features
 
+ChatGPT is unique in how much it can offer to users. Notable features include:
+
+- Easy integration: you only need a few lines of code to integrate ChatGPT into your app (see `chat_cli.py` and `chat_ul.py` to see this code in action).
+- Customizable response parameters: you can control a response's length, its temperature (rate of randomness), the number of responses at a time, and more.
+- Rich responses: ChatGPT can be flexible with the type of content it responds with, including longform prose, bullet-point lists, and code snippets.
+- Multi-turn conversations: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
+
 ChatGPT is constantly changing and updating. To see all updates made to ChatGPT so far, please refer to its ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
-
-### Examples of commands and interface walkthroughs
-
-WIP!
 
 ### Using `chat_cli.py`
 
@@ -434,7 +437,13 @@ After you've created an OpenAI account, head to the [API keys](https://platform.
 
 ### Examples of API usage
 
-WIP!
+The OpenAI API can do a lot of various things - it is a powerful tool mean to be used for a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example application that use ChatGPT in different use cases. Some notable overall categories of these examples include:
+
+- Language tasks: these include generating prose, summarizing documents, and translating text between languages
+- Conversational AI: create chatbots (which we do in our example Python files), virtual assistants, and customer support systems
+- Content creation: generate content including articles, blog posts, and product descriptions
+- Data analysis: analyze large datasets and extract insights
+- Productivity tools: automate tedious tasks or decision making like to-do lists, writing emails, or even playing chess
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c0d1afba2fed7fef82cfc60fbf999cf7)
 
