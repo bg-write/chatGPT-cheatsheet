@@ -82,31 +82,31 @@ ChatGPT is a state-of-the-art, large-scale natural language processing model bas
 
 > _This time, I asked ChatGPT to sum itself up in one sentence to an AI and machine learning expert. Pretty cool, right?_
 
-But ... what are AI and machine learning?
+But ... what's this about AI and machine learning?
 
-**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed. So in relation to AI and machine learning, ChatGPT is a particular machine learning model that has been trained on a large corpus of text data to generate human-like responses and carry out natural language processing tasks.
+**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed. So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a large corpus of text data to generate human-like responses and carry out natural language processing tasks.
 
-> _If you'd like to read up more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing).'_
+> _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing), which informs a lot of the high-level concepts found in this guide.'_
 
 There are a few different ways to look at ChatGPT. Here are a few metaphors I like:
 
 #### ChatGPT is like a very tech-savvy intern
 
-ChatGPT is helpful when assisting you in work that you can do on your own but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check and fine-tune on your own, you're in good hands.
+ChatGPT is helpful when assisting you in work that you can do but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check and fine-tune on your own, you're in good hands.
 
 #### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
 
-If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities.
+If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities. ChatGPT is only as informed as the Internet allows it to be.
 
 #### ChatGPT is like a very knowledgeable person (but not a very smart person)
 
-ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play.
+ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. (A mark of an excellent software engineer, and any problem solver, is the ability to ask and explore good and informed questions; the better your questions, the more ChatGPT can help you.)
 
 ### Project goals and intended audience
 
 The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you're a non-developer using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
 
-This saying has already become cliche, and it's true: AI will probably ("probably") not take your job, but it will likely _change_ your job.
+This saying has already become cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ likely change your job.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c194787e015a971b4da76eccefb9bfa7)
 
@@ -120,7 +120,7 @@ ChatGPT
 
 - [A free OpenAI account](https://openai.com/blog/chatgpt)
 - A web browser with secure internet
-- NOTE: Sometimes when using ChatGPT on the web, if I don't use it after a few minutes, I'll get errors with each new prompt I try to enter. Simply refreshing my web browser fixes the issue.
+- NOTE: Sometimes when using ChatGPT on the web, if I don't use it after a few minutes, I'll get errors with each new prompt I try to enter. Simply refreshing my web browser fixes this issue.
 
 Mac
 
@@ -146,12 +146,12 @@ Linux:
 
 ### Installing dependencies
 
-Both chatbot example files in this guide are written in Python, so you'll need to download the latest versions of the following:
+Both chatbot examples in this guide are written in Python, so you'll need to download the latest versions of the following:
 
 - [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great info on how to get started with Python)
 - [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
-- [Gradio](https://gradio.app/quickstart/) (the UI library I'm using to locally deploy our chatbot; you can use any UI library, though Gradio is quite easy to use.)
-- [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep my OpenAI API key hidden!)
+- [Gradio](https://gradio.app/quickstart/) (the UI library I'm using to locally deploy our chatbot; you can use any UI library, though Gradio is quite easy to use with OpenAI.)
+- [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep my secret key hidden!)
 
 As of this writing, I'm using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
 
@@ -159,7 +159,7 @@ As of this writing, I'm using the API model version "gpt-3.5-turbo," though this
 
 ### Running the code
 
-In either .py file, in your terminal, run the python command and the name of the file to start the app:
+In either `.py` file, in your terminal, run the python command and the name of the file to start the app:
 
 `python chat_cli.py`
 
@@ -169,7 +169,7 @@ or
 
 The terminal will provide next steps and how to view your results.
 
-When you want to exit out of the chat, on your keyboard, do `control + c`.
+When you want to exit out of the chat, on your keyboard, keypress `control + c`.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=63ba4d9815821585ba01b47e5b6af89e)
 
@@ -181,12 +181,12 @@ When you want to exit out of the chat, on your keyboard, do `control + c`.
 
 ChatGPT is unique in how much it can offer to users. Notable features include:
 
-- Easy integration: you only need a few lines of code to integrate ChatGPT into your app (see `chat_cli.py` and `chat_ul.py` to see this code in action).
+- Easy integration: you only need a few lines of code to add ChatGPT into your app (see `chat_cli.py` and `chat_ul.py` to see this code in action).
 - Customizable response parameters: you can control a response's length, its temperature (rate of randomness), the number of responses at a time, and more.
 - Rich responses: ChatGPT can be flexible with the type of content it responds with, including longform prose, bullet-point lists, and code snippets.
 - Multi-turn conversations: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
 
-ChatGPT is constantly changing and updating. To see all updates made to ChatGPT so far, please refer to its ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
+ChatGPT is constantly changing and updating. To see all updates made so far, please refer to OpenAI's ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
 
 ### Using `chat_cli.py`
 
@@ -196,7 +196,7 @@ This is a very simple example of how to build your own chatbot that runs in the 
 message_history = []
 ```
 
-We first create an empty list called `message_history` that'll soon store our chat's conversation history. We then create a `while` loop that'll continue until we manually stop the app. The rest of these code snippets live inside this `while` loop.
+We first create an empty list called `message_history` that'll soon store our chat's conversation history. We then create a `while` loop that'll repeat until we manually stop the app. The rest of these code snippets live inside this `while` loop.
 
 ```python
 user_input = input("USER PROMPT > ")
@@ -227,7 +227,7 @@ _This_ is how we finally begin talking to ChatGPT - by creating a `completion`. 
 - `model`: the specific GPT-3 language model we're using
 - `messages`: our chat history
 - `max_tokens`: the max number of tokens to generate in a response
-- `n`: the number of responses to generate at a time
+- `n`: the number of responses to return at a time
 - `stop`: define any specific conditions that'll stop a response
 - `temperature`: the level of randomness in a generated response (from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response)
 
@@ -236,7 +236,7 @@ reply_content = completion.choices[0].message.content
 print("CHATGPT RESPONSE:", reply_content)
 ```
 
-Our new `reply_content` variable extracts and stores our API's `completion`. The API provides much more information than shown, but `reply_content` is only concern with the content of the actual message. Printing `reply_content` allows the user to see the API's response.
+Our new `reply_content` variable extracts and stores our API's `completion`. Our API provides much more information than shown, but `reply_content` is only concern with the content of the actual message. Printing `reply_content` allows the user to see the API's response and only the info they care about.
 
 ```python
 message_history.append({
@@ -247,18 +247,18 @@ message_history.append({
 
 We then append our new `reply_content` to `message_history`, and note its role as an "assistant."
 
-This cycle then repeats over and over until the user manually stops the app.
+This cycle repeats over and over until the user manually stops the app.
 
 ```python
 except openai.error.OpenAIError as error:
   print("OpenAI API error:", error)
 ```
 
-All the above code under `try` is executed when there are no issues. If there are any issues that come up, this `except` kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
+All the above code under `try` is executed when there are no issues. When issues come up, this `except` block kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
 
 ### Using `chat_ui.py`
 
-This an example of how to deploy a simple chatbot locally in your web browser. The overall structure is similar to `chat_cli.py`, but it's worth nothing this major difference:
+This an example of how to deploy a simple chatbot locally in your web browser. The overall structure is similar to `chat_cli.py`, but it's worth nothing this important difference:
 
 ```python
 messages = [{
@@ -269,7 +269,7 @@ messages = [{
 }]
 ```
 
-By defining `messages` early with this specific "system" content, we can set the context for our chatbot. Right now, I've set this chatbot to act like a music curator, but I can easily change this to hard-set the chatbot to talk like a financial planner, or your sassy middle school teacher.
+By defining `messages` early with this specific "system" content, we can set the context for our chatbot. Right now, I've set this chatbot to act like a music curator, but I can easily change the system's content to hard-set the chatbot to talk like a financial planner, or a sassy middle school teacher.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=62784286f00abd02f2e458828b87d767)
 
@@ -277,7 +277,7 @@ By defining `messages` early with this specific "system" content, we can set the
 
 [Return to top](#top)
 
-There are so many ways you can use ChatGPT. Below are some examples I especially love and their sources. Each bullet point is a prompt that you would type into ChatGPT, and each sub-bullet is a follow-up prompt you can write in your same open window; what makes ChatGPT unique and powerful is its ability to keep track and remember your conversation.
+There are _so_ many ways to use ChatGPT. Below are some examples I especially love and their sources. Each bullet point is a prompt that you would type into ChatGPT, and each sub-bullet is a follow-up prompt that you can write in the same open window.
 
 ### General Learning, Troubleshooting, Or Brainstorming
 
@@ -433,17 +433,17 @@ The good news is that OpenAI's documentation is really detailed and easy to read
 
 ### Obtaining an API key
 
-After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and following its steps.
+After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps.
 
 ### Examples of API usage
 
-The OpenAI API can do a lot of various things - it is a powerful tool mean to be used for a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example application that use ChatGPT in different use cases. Some notable overall categories of these examples include:
+The OpenAI API can do a lot of various things - it's a powerful tool meant to be used for a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example application that use ChatGPT in different use cases. Some overall categories of these examples include:
 
-- Language tasks: these include generating prose, summarizing documents, and translating text between languages
-- Conversational AI: create chatbots (which we do in our example Python files), virtual assistants, and customer support systems
-- Content creation: generate content including articles, blog posts, and product descriptions
-- Data analysis: analyze large datasets and extract insights
-- Productivity tools: automate tedious tasks or decision making like to-do lists, writing emails, or even playing chess
+- Language tasks: these include generating prose, summarizing documents, and translating text between languages.
+- Conversational AI: create chatbots (which we do in our example Python files), virtual assistants, and customer support systems.
+- Content creation: generate articles, blog posts, and product descriptions.
+- Data analysis: analyze large datasets and extract insights.
+- Productivity tools: automate tedious tasks or decision making like to-do lists, writing emails, or even playing chess.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c0d1afba2fed7fef82cfc60fbf999cf7)
 
