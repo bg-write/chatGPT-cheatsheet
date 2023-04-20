@@ -22,9 +22,9 @@ II. [Getting Started](#getting-started)
 III. [Usage](#usage)
 
 - Overview of features
+- Examples of commands and interface walkthroughs
 - Using `chat_cli.py` (ChatGPT in the command line)
 - Using `chat_ui.py` (ChatGPT deployed on localhost)
-- Examples of commands and interface walkthroughs
 
 IV. [Examples of Useful ChatGPT Prompts](#prompt-examples)
 
@@ -181,17 +181,19 @@ When you want to exit out of the chat, on your keyboard, do `control + c`.
 
 ChatGPT is constantly changing and updating. To see all updates made to ChatGPT so far, please refer to its ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
 
+### Examples of commands and interface walkthroughs
+
+WIP!
+
 ### Using `chat_cli.py`
 
-This is a very simple example of how to build your own chatbot app that runs in the command line with ChatGPT. The file's main feature is the `chatbot` function, which is broken down like so:
+This is a very simple example of how to build your own chatbot that runs in the command line with ChatGPT. The file's main feature is the `chatbot` function, which is broken down like so:
 
 ```python
 message_history = []
 ```
 
-We first create an empty list called `message_history` that'll soon store our chat's conversation history.
-
-We then create a `while` loop that'll continue until we manually stop the app. The rest of these code snippets live inside this `while` loop.
+We first create an empty list called `message_history` that'll soon store our chat's conversation history. We then create a `while` loop that'll continue until we manually stop the app. The rest of these code snippets live inside this `while` loop.
 
 ```python
 user_input = input("USER PROMPT > ")
@@ -204,9 +206,7 @@ We prompt the user to input data, which is then stored in our new variable `user
 message_history.append({"role": "user", "content": user_input})
 ```
 
-We then append our new `user_input` into `message_history`, as well as its role as a "user."
-
-We then create a `try-except` block that'll handle potential errors (more on that in a sec).
+We then append our new `user_input` into `message_history`, as well as its role as a "user." We then create a `try-except` block that'll handle potential errors (more on that in a sec).
 
 ```python
 completion = openai.ChatCompletion.create(
@@ -219,13 +219,13 @@ completion = openai.ChatCompletion.create(
 )
 ```
 
-This is how we finally begin talking to ChatGPT - by creating a `completion`. This basic `openai.ChatCompletion.create()` method includes the following:
+_This_ is how we finally begin talking to ChatGPT - by creating a `completion`. This basic `openai.ChatCompletion.create()` method includes the following:
 
 - `model`: the specific GPT-3 language model we're using
 - `messages`: our chat history
 - `max_tokens`: the max number of tokens to generate in a response
 - `n`: the number of responses to generate at a time
-- `stop`: define any specific conditions to stop a response
+- `stop`: define any specific conditions that'll stop a response
 - `temperature`: the level of randomness in a generated response (from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response)
 
 ```python
@@ -251,11 +251,11 @@ except openai.error.OpenAIError as error:
   print("OpenAI API error:", error)
 ```
 
-All the above code under `try` executes when there are no issues. If there are any issues that come up, this `except` code kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
+All the above code under `try` is executed when there are no issues. If there are any issues that come up, this `except` kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
 
 ### Using `chat_ui.py`
 
-This an example of how to deploy a simple chatbot using ChatGPT locally in your web browser. The overall structure is similar to `chat_cli.py`, but it's worth nothing this major difference:
+This an example of how to deploy a simple chatbot locally in your web browser. The overall structure is similar to `chat_cli.py`, but it's worth nothing this major difference:
 
 ```python
 messages = [{
@@ -266,11 +266,7 @@ messages = [{
 }]
 ```
 
-By defining `messages` early with this specific "system" content, we can set the context for this specific chatbot. Right now, I've set this chatbot to act like a music curator, but I can change this to set the chatbot to talk like a financial planner, or your sassy middle school teacher.
-
-### Examples of commands and interface walkthroughs
-
-WIP!
+By defining `messages` early with this specific "system" content, we can set the context for our chatbot. Right now, I've set this chatbot to act like a music curator, but I can easily change this to hard-set the chatbot to talk like a financial planner, or your sassy middle school teacher.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=62784286f00abd02f2e458828b87d767)
 
