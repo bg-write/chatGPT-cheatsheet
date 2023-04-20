@@ -1,19 +1,19 @@
-<a name="top"></a>
+# ChatGPT Cheatsheet <a name="top"></a>
 
-# ChatGPT: How to Get Started (and Not Be Afraid)
+How to Get Started (and Not Be Afraid)
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
-![ChatGPT 101](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
+![image](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
 
 ## Table of Contents
 
-I. Introduction
+I. [Introduction](#intro)
 
 - Overview of ChatGPT
 - Project goals and intended audience
 
-II. Getting Started
+II. [Getting Started](#getting-started)
 
 - System requirements
 - Installing dependencies
@@ -28,8 +28,25 @@ III. Usage
 
 IV. Example ChatGPT Prompts
 
-- TBD
-- TBD
+- General Learning, Troubleshooting, Or Brainstorming
+- Creating Your Own Study Guide
+- Generating Project Ideas
+- Preparing For A Job Interview
+- Working In Excel
+- Writing Shell (Linux) Commands
+- Writing Git Commands
+- Improving Code & Getting Feedback
+- Extracting Data
+- Generating Dummy Data
+- Generating Documentation
+- Understanding and Fixing Errors
+- Writing Tests
+- Building An API
+- Natural Language Programming
+- Python Examples
+- HTML, CSS, and JavaScript Examples
+- React Examples
+- SQL Examples
 
 V. API Reference
 
@@ -48,115 +65,145 @@ VII. Legal Notices
 - License information
 - Closing Credits
 
-## I. Introduction
+![image](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
+
+## I. Introduction <a name="intro"></a>
 
 [Return to top](#top)
 
 ### Overview of ChatGPT
 
-ChatGPT is a computer program that can understand and generate human-like language to have conversations with people. (This is the answer I got when I asked ChatGPT to explain itself in one sentence to someone who knows nothing about ChatGPT or AI.)
+ChatGPT is a computer program that can understand and generate human-like language to have conversations with people.
+
+> _This is the answer I got when I asked ChatGPT to explain itself in one sentence to someone who knows nothing about ChatGPT or AI._
 
 How about a more specific definition?
 
-ChatGPT is a state-of-the-art, large-scale natural language processing model based on the Transformer architecture, which can generate human-like text and perform various language-related tasks with high accuracy. (This time, I asked ChatGPT to sum itself up in one sentence to an AI and machine learning expert. Pretty cool, right?)
+ChatGPT is a state-of-the-art, large-scale natural language processing model based on the Transformer architecture, which can generate human-like text and perform various language-related tasks with high accuracy.
 
-But what are AI and machine learning?
+> _This time, I asked ChatGPT to sum itself up in one sentence to an AI and machine learning expert. Pretty cool, right?_
 
-**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence.
+But ... what are AI and machine learning?
 
-**Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed.
+**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed. So in relation to AI and machine learning, ChatGPT is a particular machine learning model that has been trained on a large corpus of text data to generate human-like responses and carry out natural language processing tasks.
 
-So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a large corpus of text data to generate human-like responses and carry out natural language processing tasks.
+There are a few different ways to look at ChatGPT. Here are a few metaphors I like:
 
-There are a few different ways to look at ChatGPT. Here are a few metaphors that I like as of this writing.
+#### <u>ChatGPT is like a very tech-savvy intern</u>
 
-#### ChatGPT is like a very tech-savvy intern
+It's helpful when assisting you in work that you can do on your own but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check and fine-tune on your own, you're in good hands.
 
-It's helpful when assisting you in work that you can do on your own but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check on your own, you're in good hands.
+#### <u>ChatGPT is like a Rabbi, Mullah, or Priest of the Internet</u>
 
-#### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
+If the Internet is its sacred text, ChatGPT interprets and conveys information available on the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge.
 
-If the Internet is like a sacred text, ChatGPT is like a rabbi, mullah, or priest of the information found on the Internet. ChatGPT interprets and conveys information available on the Internet in a way that's easy to read and digest. This communication can help visualize and break-down ideas, but they should be taken with a grain of salt and should not be a substitute for your own knowledge.
+#### <u>ChatGPT is like a very knowledgeable person (but not a smart person)</u>
 
-#### ChatGPT is like a very knowledgeable person (but who's not very smart)
-
-This is not the same thing as being a very smart person, or a wise person. ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers; ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it. This is where the famous expression "garbage in, garbage out" comes into play.
+ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers; ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play.
 
 ### Project goals and intended audience
 
-The goal of this project is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you're a non-developer using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
+The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you're a non-developer using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
 
-## II. Getting Started
+![image](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
+
+## II. Getting Started <a name="getting-started"></a>
+
+[Return to top](#top)
 
 ### System requirements
 
-ChatGPT for MacOS:
+ChatGPT
 
-ChatGPT for Windows:
+- [A free OpenAI account](https://openai.com/blog/chatgpt)
+- A web browser & secure internet
 
-ChatGPT for Linux:
+Mac
 
-OpenAI's ChatGPT Home Page: <https://openai.com/blog/chatgpt>
+- macOS 10.15 or later
+- At least 4GB of RAM
+- 2GHz Intel Core i5 or equivalent CPU
 
-ChatGPT's Landing Page (you'll need to log in with your OpenAI account or sign up for free): <https://chat.openai.com/auth/login>
+Windows:
 
-Regarding of your system, in order to access OpenAI's ChatGPT home page and the ChatGPT landing page, you just need a working web browser.
+- Windows 10 or later
+- At least 4GB of RAM
+- 2GHz Intel Core i5 or equivalent CPU
 
-For the sake of simplicity and accessibility, we'll be sticking to using GPT-3. GPT-4 is available now but only in beta mode; this guide will be updated once GPT-4 and future versions are more widely available.
+Linux:
 
-IMPORTANT: Be mindful of everything you ask and send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store.
+- Ubuntu 18.04 or later, or a similar Linux distribution
+- At least 4GB of RAM
+- 2GHz Intel Core i5 or equivalent CPU
+
+> _NOTE: For the sake of simplicity and accessibility, we'll be sticking to using GPT-3. GPT-4 is available now but only in beta; this guide will be updated once GPT-4 and future versions are more widely available._ > _IMPORTANT: Be mindful of everything you ask and send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store._
 
 ### Installing dependencies
 
-Both chatbot example files found in this repo are written in Python, so you'll need to download the latest version of Python.
+Both chatbot example files found in this guide are written in Python, so you'll need to download the latest versions of the following:
 
-Make sure to check out OpenAI's quickstart guide to ChatGPT in Python for help with installing and setting up Python: XXX
+- [Python](https://platform.openai.com/docs/quickstart/build-your-application)
+- [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
+- [Gradio](https://gradio.app/quickstart/) (the UI library I'm using to locally deploy our chatbot)
+- [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep my OpenAI API key hidden!)
 
-You'll also need to download the OpenAI library. I also downloaded Gradio, which is not required but is the UI library I'm using to locally deploy our chatbot. For security and safety, I also downloaded python-dotenv to keep my OpenAI API key hidden.
+As of this writing, I'm using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
 
-Though this repo focuses on Python, you can use OpenAI's API in other languages. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) did a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video going over the basics of creating a chatbot with vanilla JavaScript.
+> _Though this repo focuses on Python, you can use OpenAI's API in other languages. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) has a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video going over the basics of creating a chatbot with vanilla JavaScript._
 
 ### Running the code
 
-In either .py file, in the terminal, run the python command and the name of the file to start the app.
+In either .py file, in the terminal, run the python command and the name of the file to start the app:
 
-i.e. "> python chat_cli.py" or "> python chat_ui.py"
+`python chat_cli.py`
+
+or
+
+`python chat_ui.py`
 
 The terminal will provide next steps for you and how to view your results.
 
-When you wish to exit out of the chat to then restart the program, on your keyboard, click "control + c."
+When you wish to exit out of the chat to then restart the program, on your keyboard, click `control + c`.
+
+![image](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
 
 ## III. Usage
+
+[Return to top](#top)
 
 ### Overview of features
 
 ChatGPT is also constantly changing and updating. To see all updates made to ChatGPT so far, please refer to its release notes: <https://help.openai.com/en/articles/6825453-chatgpt-release-notes>
 
-### Using "chat_cli.py" (Using ChatGPT to build a command line app)
+### Using "chat_cli.py"
 
-As of this writing, I'm using the API model version "gpt-3.5-turbo."
+WIP!
 
-### Using "chat_ui.py" (Using ChatGPT to build an app you can view on your web browser)
+### Using "chat_ui.py"
 
-As of this writing, I'm using the API model version "gpt-3.5-turbo."
+WIP!
 
 ### Examples of commands and interface walkthroughs
 
-TBD
+WIP!
+
+![image](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
 
 ## IV. Example ChatGPT Prompts
 
-There are so many ways you can ask and use ChatGPT. Below are some examples I've especially love and where I found them.
+[Return to top](#top)
+
+There are so many ways you can ask and use ChatGPT. Below are some examples I've especially love and their sources.
 
 ### General Learning, Troubleshooting, Or Brainstorming
 
 - What are the top 3 books for learning Java? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- What are the key takeaways from BOOK? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- What does WORD mean?
+- What are the key takeaways from Kurt Vonnegut's novel 'Slaughterhouse-Five'? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+- What does the word "monozygotic" mean?
   - Now give me a synonym.
   - Now use it in 10 sentences. ([Santrel](https://youtu.be/jHv63Uvk5VA))
 - How do I become a front-end developer? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- I want to hire a graphic designer to design my website. We've agreed that they will deliver the first draft in two weeks and offer three iterations free of charge. Any iteration after will be charged at $50/hour. Write a contract for us. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)) (Obviously run any contracts you'll actually use by a real-life lawyer first.)
+- I want to hire a graphic designer to design my website. We've agreed that they will deliver the first draft in two weeks and offer three iterations free of charge. Any iteration after will be charged at $50/hour. Write a contract for us. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)) (_Obviously run any contracts you'll actually use by a real-life lawyer first!_)
 - Write an email to my boss asking for a raise. I've worked at this company for 2 years and successfully delivered several projects on time. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - I want to learn about the fetch API. What are the steps that I should take?
   - Tell me more about #2.
@@ -281,49 +328,60 @@ There are so many ways you can ask and use ChatGPT. Below are some examples I've
 - Write an SQL query to retrieve the top 5 customers in Manhattan
   - Revise this query and join the customers table with the orders table to find out how much each customer has spent. Then pick the top 5 who have spent the most. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
+![image](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
+
 ## V. API Reference
+
+[Return to top](#top)
 
 ### Overview of the OpenAI API
 
-ChatGPT's Overall API Documentation (and where you can keep track of how many tokens you've used so ar): <https://platform.openai.com/>
+The good news is that OpenAI's documentation is really detailed and easy to read. When in doubt, you can go straight to the source: <https://platform.openai.com/>
 
-OpenAI's Playground (to test out completions): <https://platform.openai.com/playground>
+#### API Quick Links
 
-ChatGPT API library (Python): <https://platform.openai.com/docs/libraries/python-bindings>
-
-ChatGPT API library (Node.js): <https://platform.openai.com/docs/libraries/node-js-library>
-
-ChatGPT API Community libraries (multiple languages): <https://platform.openai.com/docs/libraries/community-libraries>
-
-ChatGPT API Application Examples: <https://platform.openai.com/examples>
+- [OpenAI's Playground](https://platform.openai.com/playground) (to test out API completions)
+- ChatGPT's API libraries:
+  - [Python](https://platform.openai.com/docs/libraries/python-bindings)
+  - [Node.js](https://platform.openai.com/docs/libraries/node-js-library)
+  - [Community libraries (multiple languages)](https://platform.openai.com/docs/libraries/community-libraries)
+- [ChatGPT Application Examples](https://platform.openai.com/examples)
 
 ### Obtaining an API key
 
-TBD
+After you've created an OpenAI account, head to its [API keys](https://platform.openai.com/account/api-keys) section and following the steps.
 
 ### Examples of API usage
 
-TBD
+WIP!
+
+![image](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
 
 ## VI. Contributing
 
+[Return to top](#top)
+
 ### Bug reporting
 
-TBD
+WIP!
 
 ### Feature requests
 
-TBD
+WIP!
 
 ### Pull requests
 
-TBD
+WIP!
+
+![image](https://doodleipsum.com/700/flat?i=dc8797cdd78c30bd8c72a5fbf1157b7e)
 
 ## VII. Legal Notices
 
+[Return to top](#top)
+
 ### License information
 
-TBD
+WIP!
 
 ### Closing Credits
 
