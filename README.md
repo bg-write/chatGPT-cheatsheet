@@ -96,7 +96,7 @@ ChatGPT is helpful when assisting you in work that you can do but might be too r
 
 #### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
 
-If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities. AI is only as good as the data its trained on, and ChatGPT is only as informed as the Internet allows it to be.
+If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities. AI is only as good as the data it's trained on, and ChatGPT is only as informed as the Internet allows it to be.
 
 #### ChatGPT is like a very knowledgeable person (but not a very smart person)
 
