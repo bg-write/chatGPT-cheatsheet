@@ -1,4 +1,4 @@
-'''A chatbot using the Gradio's UI.'''
+'''A chatbot using the Gradio UI library.'''
 import os
 import gradio as gr
 import openai
