@@ -96,11 +96,15 @@ ChatGPT is helpful when assisting you in work that you can do but might be too r
 
 #### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
 
-If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities. ChatGPT is only as informed as the Internet allows it to be.
+If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities. AI is only as good as the data its trained on, and ChatGPT is only as informed as the Internet allows it to be.
 
 #### ChatGPT is like a very knowledgeable person (but not a very smart person)
 
 ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. (A mark of an excellent software engineer, and any problem solver, is the ability to ask and explore good and informed questions; the better your questions, the more ChatGPT can help you.)
+
+#### ChatGPT is like a dog
+
+It's very excited to play fetch (help solve your problem) even if it doesn't actually understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm to do something through machine learning), but it doesn't understand what a "stick" is like a human can; it just understands that you want it. It just wants a treat and be told that it's a good boy.
 
 ### Project goals and intended audience
 
