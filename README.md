@@ -13,6 +13,7 @@ Whether you don't want to touch any code or want to build your first chatbot, Ch
 I. [Introduction](#intro)
 
 - Overview of ChatGPT
+- Metaphors Visualizing What ChatGPT Can (and Can't) Do
 - Project goals and intended audience
 
 II. [Getting Started](#getting-started)
@@ -92,7 +93,7 @@ ChatGPT is a state-of-the-art, large-scale natural language processing model bas
 
 OK ... but what does this all mean?
 
-**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed; in a way, it's learning from itself.
+**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed; in a way, it's learning from itself. Give it a goal and a data set to learn from and it'll do the rest.
 
 So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a _lot_ of text data to generate human-like responses and carry out natural language processing tasks.
 
@@ -100,7 +101,9 @@ So in relation to AI and machine learning, **ChatGPT** is a particular machine l
 
 > _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide. Thank you, Janelle!_
 
-There are a few ways to look at ChatGPT. Here are a few different metaphors:
+### Metaphors Visualizing What ChatGPT Can (and Can't) Do
+
+There are a few ways to look at ChatGPT. Here are a few different metaphors to get you started:
 
 #### ChatGPT is like a very tech-savvy intern
 
@@ -112,11 +115,27 @@ If the Internet is its sacred text, ChatGPT interprets and conveys its informati
 
 #### ChatGPT is like a very knowledgeable person (but not a very smart person)
 
-ChatGPT's access to information is impressive. Still, dumb questions don't yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. The better your questions, the better ChatGPT can help.
+ChatGPT's access to information is impressive. Still, dumb questions don't yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. The better your questions and data, the better ChatGPT can help.
 
 #### ChatGPT is like a dog that wants to play fetch
 
-It's very excited to play fetch with you (retrieve whatever data is needed to help you solve a problem) even if it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want it. ChatGPT only wants a treat and be told it's a good boy.
+It's very excited to play fetch with you (retrieve whatever data is needed to help you solve a problem) even if it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want it. ChatGPT only wants a treat and be told it's a good boy. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
+
+#### ChatGPT is like an impressionable child
+
+It learns by example (like algorithms learning from data via machine learning) and has _no_ idea what it should or shouldn't imitate, unless you tell it so. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
+
+#### ChatGPT is NOT like C-3PO (it's more like a swarm of flies ... or a pile of worms)
+
+[Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing)'s five principles of "AI Weirdness" is as follows:
+
+1. The dangers of AI is not that it's too smart ... it's that it's not smart enough.
+2. AI has the approximate brainpower of a worm.
+3. AI doesn't really understand the problem you want it to solve.
+4. AI, however, will do exactly what you tell it to do. (Or at least try its best.)
+5. AI will take the path of least resistance.
+
+So ChatGPT is less an intelligent machine, timid and uptight from its own knowledge and servitude, and more like a bunch of well-meaning worms doing their best.
 
 ### Project goals and intended audience
 
@@ -472,7 +491,7 @@ The OpenAI API can do a lot of various things - it's a powerful tool meant to be
 
 ### Closing Credits
 
-A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and Gradio. Doodles by [Doodle Ipsum](https://doodleipsum.com/).
+A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and Gradio. Doodles by [Doodle Ipsum](https://doodleipsum.com/). And again, [Janelle Shane's book](https://www.janelleshane.com/book-you-look-like-a-thing) is a must-read.
 
 ### Cited Sources
 
