@@ -14,19 +14,19 @@ I. [Introduction](#intro)
 
 - Overview of ChatGPT
 - Metaphors For What ChatGPT Can (and Can't) Do
-- Project goals and intended audience
+- Project Goals and Intended Audience
 
 II. [Getting Started](#getting-started)
 
-- System requirements
-- Installing dependencies
-- Running the code
+- System Requirements
+- Installing Dependencies
+- Running the Code
 
 III. [Usage](#usage)
 
-- Overview of features
-- Using `chat_cli.py` (ChatGPT in the command line)
-- Using `chat_ui.py` (ChatGPT deployed on localhost)
+- Overview of Features
+- Using `chat_cli.py` (ChatGPT in the Command Line)
+- Using `chat_ui.py` (ChatGPT Deployed on Localhost)
 
 IV. [Examples of ChatGPT Prompts and Best Practices](#prompt-examples)
 
@@ -137,7 +137,7 @@ It learns by example (like algorithms learning from data) and has _no_ idea what
 
 So ChatGPT is less an intelligent machine that's timid and uptight from its own knowledge and servitude and more like a bunch of well-meaning worms doing their best.
 
-### Project goals and intended audience
+### Project Goals and Intended Audience
 
 The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you've never touched code and are only using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
 
@@ -149,7 +149,7 @@ This saying has already become cliche, and it's true: AI will probably ("probabl
 
 [Return to top](#top)
 
-### System requirements
+### System Requirements
 
 ChatGPT
 
@@ -180,7 +180,7 @@ Linux:
 >
 > _IMPORTANT: Be mindful of everything you send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
-### Installing dependencies
+### Installing Dependencies
 
 Both chatbot examples in this guide are written in Python, so download the latest versions of the following:
 
@@ -193,7 +193,7 @@ As of this writing, I'm using the API model version "gpt-3.5-turbo," though this
 
 > _Though this guide focuses on Python, other languages can use OpenAI's API. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) has a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video reviewing the basics of creating a chatbot with vanilla JavaScript._
 
-### Running the code
+### Running the Code
 
 To run the code in either `.py` file:
 
@@ -212,7 +212,7 @@ When you want to stop either program:
 
 [Return to top](#top)
 
-### Overview of features
+### Overview of Features
 
 ChatGPT is unique in how much it can offer to users. Notable features include:
 
@@ -223,7 +223,7 @@ ChatGPT is unique in how much it can offer to users. Notable features include:
 
 > ChatGPT is constantly changing and updating. To see all updates made so far, please refer to OpenAI's ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
 
-### Using `chat_cli.py`
+### Using `chat_cli.py` (ChatGPT in the Command Line)
 
 This is a very simple example of how to build your own chatbot that runs in the command line with ChatGPT. The file's main feature is its `chatbot` function, which is broken down like so:
 
@@ -291,7 +291,7 @@ except openai.error.OpenAIError as error:
 
 All the above code under the `try` block is executed when there are no issues. When issues do come up, this `except` block kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
 
-### Using `chat_ui.py`
+### Using `chat_ui.py` (ChatGPT Deployed on Localhost)
 
 This an example of how to deploy a simple chatbot locally in your web browser. The overall structure is similar to `chat_cli.py`, but it's worth nothing this important difference:
 
