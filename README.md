@@ -1,6 +1,8 @@
-# ChatGPT Cheatsheet <a name="top"></a>
+<a name="top"></a>
 
-How to get started (and not be afraid).
+# ChatGPT Cheatsheet
+
+Whether you don't want to touch any code or want to build your first chatbot, ChatGPT can help you.
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
@@ -25,7 +27,7 @@ III. [Usage](#usage)
 - Using `chat_cli.py` (ChatGPT in the command line)
 - Using `chat_ui.py` (ChatGPT deployed on localhost)
 
-IV. [Examples of Useful ChatGPT Prompts](#prompt-examples)
+IV. [Examples of ChatGPT Prompts and Best Practices](#prompt-examples)
 
 - General Learning, Troubleshooting, Or Brainstorming
 - Creating Your Own Study Guide
@@ -64,6 +66,18 @@ VII. [Legal Notices](#legal)
 - License information
 - Closing Credits
 
+VIII. [Glossary](#glossary)
+
+- Artificial Intelligence (AI)
+- Machine Learning
+- Natural Language Processing (NLP)
+- Chatbot
+- Deep Learning
+- Neural Network
+- Generative Model
+- Transformer Model
+- API (Application Programming Interface)
+
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=0ca4af8cbb660d47f4f18a56fe91ab5b)
 
 ## I. Introduction <a name="intro"></a>
@@ -76,41 +90,43 @@ ChatGPT is a computer program that can understand and generate human-like langua
 
 > _This is the answer I got when I asked ChatGPT to explain itself in one sentence to someone who knows nothing about ChatGPT or AI._
 
-How about a more specific definition?
+Here's a more specific definition:
 
 ChatGPT is a state-of-the-art, large-scale natural language processing model based on the Transformer architecture, which can generate human-like text and perform various language-related tasks with high accuracy.
 
 > _This time, I asked ChatGPT to sum itself up in one sentence to an AI and machine learning expert. Pretty cool, right?_
 
-But ... what's this about AI and machine learning?
+OK ... but what's this about AI and machine learning? And natural language processing models? Transformer architecture?
 
 **AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed. So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a large corpus of text data to generate human-like responses and carry out natural language processing tasks.
 
+**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many examples of AI models (which I'll detail in a future version of this guide). For now, it's important to know that ChatGPT uses the **Transformer Model** architecture. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence all at once.
+
 > _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing), which informs a lot of the high-level concepts found in this guide.'_
 
-There are a few different ways to look at ChatGPT. Here are a few metaphors I like:
+There are a few ways to look at ChatGPT. Here are a few different metaphors:
 
 #### ChatGPT is like a very tech-savvy intern
 
-ChatGPT is helpful when assisting you in work that you can do but might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you can also fact-check and fine-tune on your own, you're in good hands.
+ChatGPT is helpful when assisting you in work that might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you also can fact-check and fine-tune on your own, you're in good hands.
 
 #### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
 
-If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities. AI is only as good as the data it's trained on, and ChatGPT is only as informed as the Internet allows it to be.
+If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities. AI is only as good and bias as the data it's trained on, and ChatGPT is only as informed as the Internet allows it to be.
 
 #### ChatGPT is like a very knowledgeable person (but not a very smart person)
 
-ChatGPT's access to information is impressive, but dumb questions will not always yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. (A mark of an excellent software engineer, and any problem solver, is the ability to ask and explore good and informed questions; the better your questions, the more ChatGPT can help you.)
+ChatGPT's access to information is impressive. Still, dumb questions will not always yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. The better your questions, the better ChatGPT can help.
 
-#### ChatGPT is like a dog
+#### ChatGPT is like a dog that wants to play fetch
 
-It's very excited to play fetch (help solve your problem) even if it doesn't actually understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm to do something through machine learning), but it doesn't understand what a "stick" is like a human can; it just understands that you want it. It just wants a treat and be told that it's a good boy.
+It's very excited to play fetch with you (retrieve data to help you solve a problem) even if it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm to do something through machine learning), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want it. ChatGPT only wants a treat and be told that it's a good boy.
 
 ### Project goals and intended audience
 
-The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you're a non-developer using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
+The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you've never touched code before and are only using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
 
-This saying has already become cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ likely change your job.
+This saying has already become cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c194787e015a971b4da76eccefb9bfa7)
 
@@ -124,7 +140,8 @@ ChatGPT
 
 - [A free OpenAI account](https://openai.com/blog/chatgpt)
 - A web browser with secure internet
-- NOTE: Sometimes when using ChatGPT on the web, if I don't use it after a few minutes, I'll get errors with each new prompt I try to enter. Simply refreshing my web browser fixes this issue.
+
+> TROUBLESHOOTING: Sometimes when using ChatGPT on the web, if I don't use it after a few minutes, I'll get errors with each new prompt I try to enter. Refreshing my web browser fixes this issue.
 
 Mac
 
@@ -144,36 +161,35 @@ Linux:
 - At least 4GB of RAM
 - 2GHz Intel Core i5 or equivalent CPU
 
-> _NOTE: For the sake of simplicity and accessibility, we'll be sticking to GPT-3. GPT-4 is available but only in beta; this guide will be updated once GPT-4 and future versions are more widely available._
+> _NOTE: For the sake of simplicity and accessibility, we're using GPT-3. GPT-4 is available but only in beta; this guide will be updated once GPT-4 and future versions are more widely available._
 >
 > _IMPORTANT: Be mindful of everything you send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
 ### Installing dependencies
 
-Both chatbot examples in this guide are written in Python, so you'll need to download the latest versions of the following:
+Both chatbot examples in this guide are written in Python, so download the latest versions of the following:
 
 - [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great info on how to get started with Python)
 - [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
-- [Gradio](https://gradio.app/quickstart/) (the UI library I'm using to locally deploy our chatbot; you can use any UI library, though Gradio is quite easy to use with OpenAI.)
+- [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbot; any UI library is fine, though Gradio is easy to use with OpenAI.)
 - [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep my secret key hidden!)
 
 As of this writing, I'm using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
 
-> _Though this guide focuses on Python, you can use OpenAI's API in other languages. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) has a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video reviewing the basics of creating a chatbot with vanilla JavaScript._
+> _Though this guide focuses on Python, other languages can use OpenAI's API. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) has a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video reviewing the basics of creating a chatbot with vanilla JavaScript._
 
 ### Running the code
 
-In either `.py` file, in your terminal, run the python command and the name of the file to start the app:
+To run the code in either `.py` file:
 
-`python chat_cli.py`
+1. Open up a new terminal.
+2. Run the python command and the name of the file. (i.e `python chat_cli.py` or `python chat_ui.py`).
+3. The terminal will provide next steps.
 
-or
+When you want to stop either program:
 
-`python chat_ui.py`
-
-The terminal will provide next steps and how to view your results.
-
-When you want to exit out of the chat, on your keyboard, keypress `control + c`.
+1. Go into the terminal where you are running the chat.
+2. On your keyboard, keypress `control + c`.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=63ba4d9815821585ba01b47e5b6af89e)
 
@@ -185,35 +201,35 @@ When you want to exit out of the chat, on your keyboard, keypress `control + c`.
 
 ChatGPT is unique in how much it can offer to users. Notable features include:
 
-- Easy integration: you only need a few lines of code to add ChatGPT into your app (see `chat_cli.py` and `chat_ul.py` to see this code in action).
-- Customizable response parameters: you can control a response's length, its temperature (rate of randomness), the number of responses at a time, and more.
-- Rich responses: ChatGPT can be flexible with the type of content it responds with, including longform prose, bullet-point lists, and code snippets.
-- Multi-turn conversations: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
+- **Easy integration**: you only need a few lines of code to add ChatGPT into your app (see `chat_cli.py` and `chat_ul.py` to see this code in action).
+- **Customizable response parameters**: it's possible to control a response's length, its temperature (rate of randomness), the number of responses at a time, and more.
+- **Rich responses**: ChatGPT can be flexible with the type of content it responds with, including longform prose, bullet-point lists, and code snippets.
+- **Multi-turn conversations**: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
 
-ChatGPT is constantly changing and updating. To see all updates made so far, please refer to OpenAI's ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
+> ChatGPT is constantly changing and updating. To see all updates made so far, please refer to OpenAI's ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
 
 ### Using `chat_cli.py`
 
-This is a very simple example of how to build your own chatbot that runs in the command line with ChatGPT. The file's main feature is the `chatbot` function, which is broken down like so:
+This is a very simple example of how to build your own chatbot that runs in the command line with ChatGPT. The file's main feature is its `chatbot` function, which is broken down like so:
 
 ```python
 message_history = []
 ```
 
-We first create an empty list called `message_history` that'll soon store our chat's conversation history. We then create a `while` loop that'll repeat until we manually stop the app. The rest of these code snippets live inside this `while` loop.
+We first create an empty list called `message_history` that'll store our chat's conversation. We then create a `while` loop that'll repeat until the user manually stop the app. The following code snippets live inside this `while` loop.
 
 ```python
 user_input = input("USER PROMPT > ")
 print(f"YOU ASKED: '{user_input}' ...")
 ```
 
-We prompt the user to input data, which is then stored in our new variable `user_input`. Printing `user_input` confirms to the user what they just entered.
+We prompt the user to input data, which we store in our new variable `user_input`. Printing `user_input` confirms to the user what they entered.
 
 ```python
 message_history.append({"role": "user", "content": user_input})
 ```
 
-We then append our new `user_input` into `message_history`, as well as its role as a "user." We then create a `try-except` block that'll handle potential errors (more on that in a sec).
+We then append our new `user_input` into `message_history`, as well as its role as a "user." We then create a `try-except` block that'll handle potential errors (more on that in a moment).
 
 ```python
 completion = openai.ChatCompletion.create(
@@ -228,11 +244,11 @@ completion = openai.ChatCompletion.create(
 
 _This_ is how we finally begin talking to ChatGPT - by creating a `completion`. This basic `openai.ChatCompletion.create()` method includes the following:
 
-- `model`: the specific GPT-3 language model we're using
-- `messages`: our chat history
-- `max_tokens`: the max number of tokens to generate in a response
-- `n`: the number of responses to return at a time
-- `stop`: define any specific conditions that'll stop a response
+- `model`: the specific GPT-3 language model we're using.
+- `messages`: our chat history.
+- `max_tokens`: the max number of tokens to generate in a response.
+- `n`: the number of responses to return at a time.
+- `stop`: define any specific conditions that'll stop a response.
 - `temperature`: the level of randomness in a generated response (from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response)
 
 ```python
@@ -240,7 +256,7 @@ reply_content = completion.choices[0].message.content
 print("CHATGPT RESPONSE:", reply_content)
 ```
 
-Our new `reply_content` variable extracts and stores our API's `completion`. Our API provides much more information than shown, but `reply_content` is only concern with the content of the actual message. Printing `reply_content` allows the user to see the API's response and only the info they care about.
+Our new `reply_content` variable extracts and stores our API's `completion`. The API provides a lot of information, but `reply_content` is only concern with the content of the actual message. Printing `reply_content` allows the user to see the API's response and only the information they want to see.
 
 ```python
 message_history.append({
@@ -251,14 +267,14 @@ message_history.append({
 
 We then append our new `reply_content` to `message_history`, and note its role as an "assistant."
 
-This cycle repeats over and over until the user manually stops the app.
+This cycle repeats until the user manually stops the app with the keypress `control + c`.
 
 ```python
 except openai.error.OpenAIError as error:
   print("OpenAI API error:", error)
 ```
 
-All the above code under `try` is executed when there are no issues. When issues come up, this `except` block kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
+All the above code under the `try` block is executed when there are no issues. When issues do come up, this `except` block kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
 
 ### Using `chat_ui.py`
 
@@ -273,11 +289,11 @@ messages = [{
 }]
 ```
 
-By defining `messages` early with this specific "system" content, we can set the context for our chatbot. Right now, I've set this chatbot to act like a music curator, but I can easily change the system's content to hard-set the chatbot to talk like a financial planner, or a sassy middle school teacher.
+By defining `messages` early with this specific "system" content, we're setting the context for our chatbot. With this example, the chatbot now acts like a music curator. However, it's easy to change the system's content to set the chatbot to talk like a financial planner, or a sassy middle school teacher.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=62784286f00abd02f2e458828b87d767)
 
-## IV. Examples of Useful ChatGPT Prompts <a name="prompt-examples"></a>
+## IV. Examples of ChatGPT Prompts and Best Practices <a name="prompt-examples"></a>
 
 [Return to top](#top)
 
@@ -291,7 +307,7 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
   - Now give me a synonym.
   - Now use it in 10 sentences. ([Santrel](https://youtu.be/jHv63Uvk5VA))
 - How do I become a front-end developer? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- I want to hire a graphic designer to design my website. We've agreed that they will deliver the first draft in two weeks and offer three iterations free of charge. Any iteration after will be charged at $50/hour. Write a contract for us. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)) (_Obviously run any contracts you'll actually use by a real-life lawyer first!_)
+- I want to hire a graphic designer to design my website. We've agreed that they will deliver the first draft in two weeks and offer three iterations free of charge. Any iteration after will be charged at $50/hour. Write a contract for us. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)) (_Make sure to run any contracts by a real-life lawyer first!_)
 - Write an email to my boss asking for a raise. I've worked at this company for 2 years and successfully delivered several projects on time. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - I want to learn about the fetch API. What are the steps that I should take?
   - Tell me more about #2.
@@ -314,7 +330,7 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 ### Preparing For A Job Interview
 
 - I have three years of experience coding in HTML, CSS, and JavaScript. Write a resume for me. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- I'm applying for a front-end engineer role at COMPANY. Write a cover letter for me. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+- I'm applying for a front-end engineer role at Netflix. Write a cover letter for me. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Act as a technical interviewer and ask me 5 questions about JavaScript
   - What is the answer to the first question? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - You are conducting an interview for a senior Front End developer role. I want you to ask me difficult React.js, HTML, CSS, and JavaScript interview questions. Your response should contain the difficulty rating, but do not give me the answer or any other information. Start by asking me one question. ([Web Dev Simplified](https://www.youtube.com/watch?v=Btc9sRIu2jw))
@@ -348,7 +364,7 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 ### Extracting Data
 
-- Based on this Wikipedia article, when was the first Model T made? [paste in the article text or wiki url]
+- Based on this Wikipedia article, when was the first Model T made? [Then paste in the article text or wiki url.]
   - Now output that as a Python variable. ([Santrel](https://youtu.be/jHv63Uvk5VA))
 
 ### Generating Dummy Data
@@ -361,12 +377,12 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 ### Generating Documentation
 
-- Generate the documentation for this API. [Paste in the GitHub repo URL.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+- Generate the documentation for this API. [Then paste in the GitHub repo URL.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
 ### Understanding and Fixing Errors
 
 - Uncaught TypeError: Cannot read property 'bar' of undefined ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- Can you tell me what this error message means and how to fix it? [Paste code and error message.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+- Can you tell me what this error message means and how to fix it? [Then paste in code and error message.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
 ### Writing Tests
 
@@ -375,9 +391,9 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 ### Building An API
 
 - I need an API built with Express.js to return the list of products. Each product should have attributes like ID, title, description, price, and imageURL.
-  - Modify the code and retrieve the products from a MongoDB database
-  - Use TypeScript in this code
-  - Generate this API using Python and FastAPI ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+  - Modify the code and retrieve the products from a MongoDB database.
+  - Use TypeScript in this code.
+  - Generate this API using Python and FastAPI. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
 ### Natural Language Programming
 
@@ -385,7 +401,7 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 ### Python Examples
 
-- Write a python function for generating a random password
+- Write a python function for generating a random password.
   - What does [line of code I don't understand] do in this code?
   - What is the time complexity of this function?
   - Write unit tests for this function.
@@ -402,8 +418,8 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 ### React Examples
 
-- Create a React component for displaying a card
-  - Deconstruct the props parameter ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+- Create a React component for displaying a card.
+  - Deconstruct the props parameter. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Create a basic react component that says hello world. CODE ONLY.
   - Add a button that toggles the visibility of the text.
   - Now write a test for this app using Playwright.
@@ -411,9 +427,9 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 ### SQL Examples
 
-- Write an SQL query to generate a table called products with 4 columns ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- Write an SQL query to generate a table called products with these columns: Id (int), Title (string), Category (int), unitPrice (float), and imageUrl (string) ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- Write an SQL query to retrieve the top 5 customers in Manhattan
+- Write an SQL query to generate a table called products with 4 columns. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+- Write an SQL query to generate a table called products with these columns: Id (int), Title (string), Category (int), unitPrice (float), and imageUrl (string). ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+- Write an SQL query to retrieve the top 5 customers in Manhattan.
   - Revise this query and join the customers table with the orders table to find out how much each customer has spent. Then pick the top 5 who have spent the most. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=1d9b55f18d3b7eb28a728bd315671fb0)
@@ -424,7 +440,7 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 ### Overview of the OpenAI API
 
-The good news is that OpenAI's documentation is really detailed and easy to read. When in doubt, you can go straight to the source: <https://platform.openai.com/>
+The good news is that OpenAI's documentation is detailed and easy to read. When in doubt, go straight to the source: <https://platform.openai.com/>
 
 #### API Quick Links
 
@@ -437,17 +453,17 @@ The good news is that OpenAI's documentation is really detailed and easy to read
 
 ### Obtaining an API key
 
-After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps.
+After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps. (And always keep this safe and secret!)
 
 ### Examples of API usage
 
-The OpenAI API can do a lot of various things - it's a powerful tool meant to be used for a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example application that use ChatGPT in different use cases. Some overall categories of these examples include:
+The OpenAI API can do a lot of various things - it's a powerful tool meant to be used for a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example applications that use ChatGPT in different use cases. Some overall categories of these examples include:
 
-- Language tasks: these include generating prose, summarizing documents, and translating text between languages.
-- Conversational AI: create chatbots (which we do in our example Python files), virtual assistants, and customer support systems.
-- Content creation: generate articles, blog posts, and product descriptions.
-- Data analysis: analyze large datasets and extract insights.
-- Productivity tools: automate tedious tasks or decision making like to-do lists, writing emails, or even playing chess.
+- **Language tasks**: generating prose, summarizing documents, and translating text between languages.
+- **Conversational AI**: create chatbots (which we do in our example Python files in this guide), virtual assistants, and customer support systems.
+- **Content creation**: generate articles, blog posts, and product descriptions.
+- **Data analysis**: analyze large datasets and extract insights.
+- **Productivity tools**: automate tedious tasks or decision making like to-do lists, writing emails, or even playing chess.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c0d1afba2fed7fef82cfc60fbf999cf7)
 
@@ -493,6 +509,48 @@ Cited videos by:
 - [Beyond Fireship](https://www.youtube.com/watch?v=e2uvhJ7r1UQ)
 
 Doodles by [Doodle Ipsum](https://doodleipsum.com/).
+
+![image](https://doodleipsum.com/700/flat?bg=D96363&i=34b1669d12f4f37be2f8fda91b87b784)
+
+## VIII. Glossary <a name="glossary"></a>
+
+[Return to top](#top)
+
+### Artificial Intelligence (AI)
+
+The ability of machines to perform tasks that would typically require human intelligence, such as learning, problem-solving, and decision-making.
+
+### Machine Learning
+
+A subfield of AI that involves training machines to learn from data, so they can make predictions or decisions without being explicitly programmed.
+
+### Natural Language Processing (NLP)
+
+A subfield of AI that focuses on the interaction between machines and humans using natural language, such as speech or text.
+
+### Chatbot
+
+A computer program that uses NLP to simulate conversation with human users, typically through messaging applications or voice assistants.
+
+### Deep Learning
+
+A subfield of machine learning that involves training neural networks with many layers to recognize patterns in data.
+
+### Neural Network
+
+A type of machine learning algorithm that is modeled after the structure of the human brain and consists of interconnected nodes or neurons that process information.
+
+### Generative Model
+
+A type of AI model that generates new data that is similar to the training data it was trained on, such as text or images.
+
+### Transformer Model
+
+A type of neural network that is widely used for NLP tasks, such as language translation, text summarization, and question answering.
+
+### API (Application Programming Interface)
+
+A set of rules and protocols that allows different software applications to communicate with each other. In the context of this project, it refers to the programming interface provided by ChatGPT that allows developers to integrate the model into their own applications.
 
 ---
 
