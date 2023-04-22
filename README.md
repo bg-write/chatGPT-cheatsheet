@@ -293,7 +293,7 @@ By defining `messages` early with this specific "system" content, we're setting 
 
 [Return to top](#top)
 
-There are _so_ many ways to use ChatGPT. Below are some examples I especially love and their sources. Each bullet point is a prompt that you would type into ChatGPT, and each sub-bullet is a follow-up prompt that you can write in the same open window.
+There are _so_ many ways to use ChatGPT. Below are some examples I especially love and their sources as needed. Each bullet point is a prompt that you would type into ChatGPT, and each sub-bullet is a follow-up prompt that you can write in the same open window.
 
 ### General Learning, Troubleshooting, Or Brainstorming
 
@@ -357,6 +357,8 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 - How can I improve this code? [Then paste the code.] ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Can you provide some feedback on this code? [Then paste the code.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+- As a senior technical writer, please review and give feedback on the README to this GitHub project: [paste in GitHub URL]. This README acts like documentation for a beginner's guide to ChatGPT. This URL includes an example of documentation that is considered "good" and which I'd like to use as a reference: [paste in URL]. This ChatGPT README should incorporate the DITA documentation concepts of Concept, Procedure/Task, and API. The README should have imperative voice and should avoid implicit voice, adverbs, and filler words that don't add any value.
+  - Search this README and return any words with implicit voice, any words that are adverbs, and any filler words.
 
 ### Extracting Data
 
@@ -374,6 +376,7 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 ### Generating Documentation
 
 - Generate the documentation for this API. [Then paste in the GitHub repo URL.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+- I need to make a glossary for a study guide I'm making on ChatGPT. What key terms should I include in this new glossary to help beginners who are new to ChatGPT, AI, and machine learning?
 
 ### Understanding and Fixing Errors
 
