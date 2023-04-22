@@ -55,7 +55,7 @@ V. [API Reference](#api-reference)
 - Obtaining an API key
 - Examples of API usage
 
-VII. [Giving Thanks](#legal)
+VI. [Giving Thanks](#legal)
 
 - Closing Credits
 - Cited Sources
@@ -90,13 +90,15 @@ ChatGPT is a state-of-the-art, large-scale natural language processing model bas
 
 > _This time, I asked ChatGPT to sum itself up in one sentence to an AI and machine learning expert. Pretty cool, right?_
 
-OK ... but what is AI? Machine learning? Natural language processing models? Transformer architecture?
+OK ... but what does this all mean?
 
-**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed; in a way, it's learning from itself. So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a _lot_ of text data to generate human-like responses and carry out natural language processing tasks.
+**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed; in a way, it's learning from itself.
 
-**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many types of AI models (which I'll detail in a future version of this guide). For now, it's important to know that ChatGPT uses the **Transformer** model architecture. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence at once.
+So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a _lot_ of text data to generate human-like responses and carry out natural language processing tasks.
 
-> _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide._
+**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many types of AI models (which I'll detail in a future version of this guide). For now, it's important to know that ChatGPT uses the **Transformer** model. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence at once.
+
+> _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide. Thank you, Janelle!_
 
 There are a few ways to look at ChatGPT. Here are a few different metaphors:
 
@@ -106,19 +108,19 @@ ChatGPT is helpful when assisting you in work that might be too repetitive or ti
 
 #### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
 
-If the Internet is its sacred text, ChatGPT interprets and conveys information from the Internet in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and should not be a substitute for your own knowledge or abilities. AI is only as good and bias as the data it's trained on, and ChatGPT is only as informed as the Internet allows it to be.
+If the Internet is its sacred text, ChatGPT interprets and conveys its information in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and not be a substitute for your own knowledge or abilities. AI is only as good and bias as the data it's trained on. ChatGPT is only as informed as the Internet allows it to be.
 
 #### ChatGPT is like a very knowledgeable person (but not a very smart person)
 
-ChatGPT's access to information is impressive. Still, dumb questions will not always yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. The better your questions, the better ChatGPT can help.
+ChatGPT's access to information is impressive. Still, dumb questions don't yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. The better your questions, the better ChatGPT can help.
 
 #### ChatGPT is like a dog that wants to play fetch
 
-It's very excited to play fetch with you (retrieve data to help you solve a problem) even if it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm to do something through machine learning), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want it. ChatGPT only wants a treat and be told that it's a good boy.
+It's very excited to play fetch with you (retrieve whatever data is needed to help you solve a problem) even if it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want it. ChatGPT only wants a treat and be told it's a good boy.
 
 ### Project goals and intended audience
 
-The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you've never touched code before and are only using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
+The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you've never touched code and are only using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
 
 This saying has already become cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
 
@@ -135,7 +137,7 @@ ChatGPT
 - [A free OpenAI account](https://openai.com/blog/chatgpt)
 - A web browser with secure internet
 
-> TROUBLESHOOTING: Sometimes when using ChatGPT on the web, if I don't use it after a few minutes, I'll get errors with each new prompt I try to enter. Refreshing my web browser fixes this issue.
+> TROUBLESHOOTING: Sometimes when using ChatGPT on the web, if you don't use it after a few minutes, you'll get errors with each new prompt you try to enter. Refreshing your web browser fixes this issue.
 
 Mac
 
@@ -447,7 +449,7 @@ The good news is that OpenAI's documentation is detailed and easy to read. When 
 
 ### Obtaining an API key
 
-After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps. (And always keep this safe and secret!)
+After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps. (And always keep this key safe and secret!)
 
 ### Examples of API usage
 
