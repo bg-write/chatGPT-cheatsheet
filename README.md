@@ -2,7 +2,7 @@
 
 # ChatGPT Cheatsheet
 
-Whether you don't want to touch any code or want to build your first chatbot, ChatGPT can help you.
+Whether you don't want to touch any code or want to build your first chatbot, ChatGPT can help.
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
@@ -55,18 +55,12 @@ V. [API Reference](#api-reference)
 - Obtaining an API key
 - Examples of API usage
 
-VI. [Contributing](#contributing)
+VII. [Giving Thanks](#legal)
 
-- Bug reporting
-- Feature requests
-- Pull requests
-
-VII. [Legal Notices](#legal)
-
-- License information
 - Closing Credits
+- Cited Sources
 
-VIII. [Glossary](#glossary)
+VII. [Glossary](#glossary)
 
 - Artificial Intelligence (AI)
 - Machine Learning
@@ -96,13 +90,13 @@ ChatGPT is a state-of-the-art, large-scale natural language processing model bas
 
 > _This time, I asked ChatGPT to sum itself up in one sentence to an AI and machine learning expert. Pretty cool, right?_
 
-OK ... but what's this about AI and machine learning? And natural language processing models? Transformer architecture?
+OK ... but what is AI? Machine learning? Natural language processing models? Transformer architecture?
 
-**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed. So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a large corpus of text data to generate human-like responses and carry out natural language processing tasks.
+**AI (Artificial Intelligence)** is a type of computer technology that allows machines to perform tasks that normally require human intelligence. **Machine Learning** is a subset of AI that enables machines to learn from data and improve their performance without being explicitly programmed; in a way, it's learning from itself. So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a _lot_ of text data to generate human-like responses and carry out natural language processing tasks.
 
-**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many examples of AI models (which I'll detail in a future version of this guide). For now, it's important to know that ChatGPT uses the **Transformer Model** architecture. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence all at once.
+**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many types of AI models (which I'll detail in a future version of this guide). For now, it's important to know that ChatGPT uses the **Transformer** model architecture. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence at once.
 
-> _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing), which informs a lot of the high-level concepts found in this guide.'_
+> _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide._
 
 There are a few ways to look at ChatGPT. Here are a few different metaphors:
 
@@ -182,13 +176,13 @@ As of this writing, I'm using the API model version "gpt-3.5-turbo," though this
 
 To run the code in either `.py` file:
 
-1. Open up a new terminal.
+1. Open a new terminal.
 2. Run the python command and the name of the file. (i.e `python chat_cli.py` or `python chat_ui.py`).
 3. The terminal will provide next steps.
 
 When you want to stop either program:
 
-1. Go into the terminal where you are running the chat.
+1. Go into the terminal where you're running the chat.
 2. On your keyboard, keypress `control + c`.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=63ba4d9815821585ba01b47e5b6af89e)
@@ -201,7 +195,7 @@ When you want to stop either program:
 
 ChatGPT is unique in how much it can offer to users. Notable features include:
 
-- **Easy integration**: you only need a few lines of code to add ChatGPT into your app (see `chat_cli.py` and `chat_ul.py` to see this code in action).
+- **Easy integration**: you only need a few lines of code to add ChatGPT into your app. (See `chat_cli.py` and `chat_ul.py` to see this code in action.)
 - **Customizable response parameters**: it's possible to control a response's length, its temperature (rate of randomness), the number of responses at a time, and more.
 - **Rich responses**: ChatGPT can be flexible with the type of content it responds with, including longform prose, bullet-point lists, and code snippets.
 - **Multi-turn conversations**: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
@@ -467,37 +461,17 @@ The OpenAI API can do a lot of various things - it's a powerful tool meant to be
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c0d1afba2fed7fef82cfc60fbf999cf7)
 
-## VI. Contributing <a name="contributing"></a>
+## VI. Giving Thanks <a name="legal"></a>
 
 [Return to top](#top)
-
-### Bug reporting
-
-WIP!
-
-### Feature requests
-
-WIP!
-
-### Pull requests
-
-WIP!
-
-![image](https://doodleipsum.com/700x700?bg=D96363&i=775ef90719314b2a92927331a7d40c8d)
-
-## VII. Legal Notices <a name="legal"></a>
-
-[Return to top](#top)
-
-### License information
-
-WIP!
 
 ### Closing Credits
 
-A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and Gradio.
+A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and Gradio. Doodles by [Doodle Ipsum](https://doodleipsum.com/).
 
-Cited videos by:
+### Cited Sources
+
+The following videos were vital in helping me make this guide. For further learning, I encourage you to watch these videos by these creators:
 
 - [Traversy](https://www.youtube.com/watch?v=o_joulYVndM)
 - [Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)
@@ -508,11 +482,9 @@ Cited videos by:
 - [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A)
 - [Beyond Fireship](https://www.youtube.com/watch?v=e2uvhJ7r1UQ)
 
-Doodles by [Doodle Ipsum](https://doodleipsum.com/).
-
 ![image](https://doodleipsum.com/700/flat?bg=D96363&i=34b1669d12f4f37be2f8fda91b87b784)
 
-## VIII. Glossary <a name="glossary"></a>
+## VII. Glossary <a name="glossary"></a>
 
 [Return to top](#top)
 
@@ -555,3 +527,5 @@ A set of rules and protocols that allows different software applications to comm
 ---
 
 © 2023 Brady Gerber. All Rights Reserved.
+
+[Return to top](#top)
