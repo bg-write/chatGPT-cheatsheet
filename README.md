@@ -13,7 +13,7 @@ Whether you don't want to touch any code or want to build your first chatbot, Ch
 I. [Introduction](#intro)
 
 - Overview of ChatGPT
-- Metaphors Visualizing What ChatGPT Can (and Can't) Do
+- Metaphors For What ChatGPT Can (and Can't) Do
 - Project goals and intended audience
 
 II. [Getting Started](#getting-started)
@@ -101,9 +101,9 @@ So in relation to AI and machine learning, **ChatGPT** is a particular machine l
 
 > _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide. Thank you, Janelle!_
 
-### Metaphors Visualizing What ChatGPT Can (and Can't) Do
+### Metaphors For What ChatGPT Can (and Can't) Do
 
-There are a few ways to look at ChatGPT. Here are a few different metaphors to get you started:
+There are a few different ways to look at ChatGPT. Here are a few metaphors to get you started:
 
 #### ChatGPT is like a very tech-savvy intern
 
@@ -123,7 +123,7 @@ It's very excited to play fetch with you (retrieve whatever data is needed to he
 
 #### ChatGPT is like an impressionable child
 
-It learns by example (like algorithms learning from data via machine learning) and has _no_ idea what it should or shouldn't imitate, unless you tell it so. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
+It learns by example (like algorithms learning from data) and has _no_ idea what it should or shouldn't imitate, unless you tell it so. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
 
 #### ChatGPT is NOT like C-3PO (it's more like a swarm of flies ... or a pile of worms)
 
@@ -132,10 +132,10 @@ It learns by example (like algorithms learning from data via machine learning) a
 1. The dangers of AI is not that it's too smart ... it's that it's not smart enough.
 2. AI has the approximate brainpower of a worm.
 3. AI doesn't really understand the problem you want it to solve.
-4. AI, however, will do exactly what you tell it to do. (Or at least try its best.)
+4. AI, however, will do _exactly_ what you tell it to do (or at least try its best).
 5. AI will take the path of least resistance.
 
-So ChatGPT is less an intelligent machine, timid and uptight from its own knowledge and servitude, and more like a bunch of well-meaning worms doing their best.
+So ChatGPT is less an intelligent machine that's timid and uptight from its own knowledge and servitude and more like a bunch of well-meaning worms doing their best.
 
 ### Project goals and intended audience
 
