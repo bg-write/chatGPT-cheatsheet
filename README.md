@@ -2,11 +2,11 @@
 
 # ChatGPT Cheatsheet
 
-Whether you don't want to touch any code or want to build your first chatbot, ChatGPT can help.
+A guide to how ChatGPT can help us (written by a skeptic).
 
 > V1: Completed April 24, 2023.
 >
-> V2: WIP (adding more specific API documentation and examples).
+> V2: WIP (adding more specific API documentation).
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
@@ -15,11 +15,11 @@ Whether you don't want to touch any code or want to build your first chatbot, Ch
 ## The TL;DR
 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
-- _All you need to get started is a free OpenAI account._
-- _If you're a developer trying to study ChatGPT's API and make your first chatbot, please refer to `chat_cli.py` and `chat_ui.py`._
-- _AI is only as good as the data it's trained on. The better and more specific your prompt is, the better ChatGPT can work for you._
+- _You don't have to know code to use ChatGPT; all you need to get started is a free [OpenAI](https://openai.com/blog/chatgpt) account._
+- _If you're a developer trying to study ChatGPT's API and make your first chatbot, please also refer to the `chat_cli.py` and `chat_ui.py` files found in this repo._
+- _AI is only as good as the data it's trained on. The better and more specific your prompt, the better ChatGPT can work for you._
 - _Check out the [API Reference](#api-reference) section to see various examples of what you can (and can't) (and shouldn't) do with ChatGPT and its API._
-- _Think of this guide as a menu: pick and choose whatever you need._
+- _This guide is like a menu: pick and choose whatever you need._
 
 ---
 
@@ -566,7 +566,7 @@ The OpenAI API can do a lot of various things - it's a powerful tool meant to be
 
 ### Closing Credits
 
-A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and Gradio. Doodles by [Doodle Ipsum](https://doodleipsum.com/). And again, [Janelle Shane's book](https://www.janelleshane.com/book-you-look-like-a-thing) is a must-read.
+A shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and Gradio. Doodles by [Doodle Ipsum](https://doodleipsum.com/). And again, [Janelle Shane's book](https://www.janelleshane.com/book-you-look-like-a-thing) is a must-read.
 
 ---
 
