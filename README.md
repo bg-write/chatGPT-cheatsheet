@@ -33,6 +33,7 @@ IV. [Examples of ChatGPT Prompts and Best Practices](#prompt-examples)
 - General Learning, Troubleshooting, Or Brainstorming
 - Creating Your Own Study Guide
 - Generating Project Ideas
+- Preparing Your Resume For A Specific Application
 - Preparing For A Job Interview
 - Working In Excel
 - Writing Shell (Linux) Commands
@@ -341,6 +342,11 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 ### Generating Project Ideas
 
 - Act as an expert data scientist and create an exploratory data analysis Python data science project about Naruto the anime. ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
+
+### Preparing Your Resume For A Specific Application
+
+- I'm applying for this role [paste in job posting URL or the text of the application] what keywords should I include on my resume?
+  - I've updated my resume to include these keywords [paste in text of the updated resume] does this resume text properly incorporate the keywords of this job position? Don't mind the structure or format of the resume text.
 
 ### Preparing For A Job Interview
 
