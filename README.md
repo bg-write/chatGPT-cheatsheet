@@ -4,7 +4,7 @@
 
 A guide to how ChatGPT can help us (written by a skeptic).
 
-_Version 1.0.0: Completed April 24, 2023_
+_Version 1.0.0: Completed April 24, 2023._
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
@@ -13,10 +13,10 @@ _Version 1.0.0: Completed April 24, 2023_
 ## The TL;DR
 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
-- _You don't have to know code to use ChatGPT; all you need to get started is a free [OpenAI](https://openai.com/blog/chatgpt) account._
-- _If you're a developer trying to study ChatGPT's API and make your first chatbot, please also refer to the `chat_cli.py` and `chat_ui.py` files found in this repo._
+- _You don't have to know code to use ChatGPT; all you need is a free [OpenAI](https://openai.com/blog/chatgpt) account._
+- _If you're a developer trying to study ChatGPT's API and make your first chatbot, you can go straight to [Getting Started](#getting-started), [Usage](#usage), or [API Reference](#api-reference)._
 - _AI is only as good as the data it's trained on. The better and more specific your prompt, the better ChatGPT can help._
-- _Check out the [API Reference](#api-reference) section to see various examples of what you can (and can't) (and shouldn't) do with ChatGPT and its API._
+- _Check out [API Reference](#api-reference) to see various examples of what you can (and can't) (and shouldn't) do with ChatGPT and its API._
 - _This guide is like a menu: pick and choose whatever you need._
 
 ---
