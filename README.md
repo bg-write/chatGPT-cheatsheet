@@ -4,12 +4,24 @@
 
 Whether you don't want to touch any code or want to build your first chatbot, ChatGPT can help.
 
-V1: Completed April 24, 2023.
-V2: WIP (adding more specific API documentation and examples).
+> V1: Completed April 24, 2023.
+>
+> V2: WIP (adding more specific API documentation and examples).
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=7bba2d304a189734c2a8226c512748dd)
+
+## The TL;DR
+
+- _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
+- _All you need to get started is a free OpenAI account._
+- _If you're a developer trying to study ChatGPT's API and make your first chatbot, please refer to `chat_cli.py` and `chat_ui.py`._
+- _AI is only as good as the data it's trained on. The better and more specific your prompt is, the better ChatGPT can work for you._
+- _Check out the [API Reference](#api-reference) section to see various examples of what you can (and can't) (and shouldn't) do with ChatGPT and its API._
+- _Think of this guide as a menu: pick and choose whatever you need._
+
+---
 
 ## Table of Contents
 
@@ -188,6 +200,8 @@ Linux:
 >
 > _IMPORTANT: Be mindful of everything you send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
+---
+
 ### Installing Dependencies
 
 Both chatbot examples in this guide are written in Python, so download the latest versions of the following:
@@ -200,6 +214,8 @@ Both chatbot examples in this guide are written in Python, so download the lates
 As of this writing, I'm using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
 
 > _Though this guide focuses on Python, other languages can use OpenAI's API. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) has a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video reviewing the basics of creating a chatbot with vanilla JavaScript._
+
+---
 
 ### Running the Code
 
@@ -230,6 +246,8 @@ ChatGPT is unique in how much it can offer to users. Notable features include:
 - **Multi-turn conversations**: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
 
 > ChatGPT is constantly changing and updating. To see all updates made so far, please refer to OpenAI's ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
+
+---
 
 ### Using `chat_cli.py` (ChatGPT in the Command Line)
 
@@ -299,6 +317,8 @@ except openai.error.OpenAIError as error:
 
 All the above code under the `try` block is executed when there are no issues. When issues do come up, this `except` block kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
 
+---
+
 ### Using `chat_ui.py` (ChatGPT Deployed on Localhost)
 
 This an example of how to deploy a simple chatbot locally in your web browser. The overall structure is similar to `chat_cli.py`, but it's worth nothing this important difference:
@@ -341,19 +361,27 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 - Give me some ideas for an app that uses the geolocation API.
   - Tell me more about #3. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
+---
+
 ### Creating Your Own Study Guide
 
 - Give me a study plan to learn Python for data science with resources and a timeline. ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
 - Act as a coding tutor that creates study plans to help people learn to code. You will be provided with the goal of the student, their time commitment, and resource preferences. You will create a study plan with timelines and links to resources. Only include relevant resources because time is limited. My first request: "I want to become a data scientist but I do not know how to code. I can study 10 hours per week and only want video resources. I want to learn to code in Python. Create a study plan for me." ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
 
+---
+
 ### Generating Project Ideas
 
 - Act as an expert data scientist and create an exploratory data analysis Python data science project about Naruto the anime. ([Tina Huang](https://www.youtube.com/watch?v=VznoKyh6AXs))
+
+---
 
 ### Preparing Your Resume For A Specific Application
 
 - I'm applying for this role [paste in job posting URL or the text of the application] what keywords should I include on my resume?
   - I've updated my resume to include these keywords [paste in text of the updated resume] does this resume text properly incorporate the keywords of this job position? Don't mind the structure or format of the resume text.
+
+---
 
 ### Preparing For A Job Interview
 
@@ -366,6 +394,8 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 - Explain JavaScript like I'm a 5-year-old. ([Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A))
 - What are the three most important concepts to know in React.js? ([Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A))
 
+---
+
 ### Working In Excel
 
 - Write an Excel formula to add up values in cells B2 through B10.
@@ -377,13 +407,19 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 - Write an Excel formula to count the number of unique values in a list. ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
 - Write an Excel macro to send emails. Use the following subject: "Kevin Cookie Company Invoice." Use the following text: "You owe the Kevin Cookie Company X." Take the value X from column A. Send it to the email address listed in column B. ([Kevin Stratvert](https://www.youtube.com/watch?v=JYtZ2zsdE_s))
 
+---
+
 ### Writing Shell (Linux) Commands
 
 - Write a bash command to find the name of all jpeg files in a directory and write them all to a text file. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
+---
+
 ### Writing Git Commands
 
 - How do I know how many lines of code I've committed to a Git repository? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+
+---
 
 ### Improving Code & Getting Feedback
 
@@ -392,10 +428,14 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 - As a senior technical writer, please review and give feedback on the README to this GitHub project: [paste in GitHub URL]. This README acts like documentation for a beginner's guide to ChatGPT. This URL includes an example of documentation that is considered "good" and which I'd like to use as a reference: [paste in URL]. This ChatGPT README should incorporate the DITA documentation concepts of Concept, Procedure/Task, and API. The README should have imperative voice and should avoid implicit voice, adverbs, and filler words that don't add any value.
   - Search this README and return any words with implicit voice, any words that are adverbs, and any filler words.
 
+---
+
 ### Extracting Data
 
 - Based on this Wikipedia article, when was the first Model T made? [Then paste in the article text or wiki url.]
   - Now output that as a Python variable. ([Santrel](https://youtu.be/jHv63Uvk5VA))
+
+---
 
 ### Generating Dummy Data
 
@@ -405,19 +445,27 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
   - Take out the programming languages field.
   - Give me the same data in XML. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
+---
+
 ### Generating Documentation
 
 - Generate the documentation for this API. [Then paste in the GitHub repo URL.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 - I need to make a glossary for a study guide I'm making on ChatGPT. What key terms should I include in this new glossary to help beginners who are new to ChatGPT, AI, and machine learning?
+
+---
 
 ### Understanding and Fixing Errors
 
 - Uncaught TypeError: Cannot read property 'bar' of undefined ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Can you tell me what this error message means and how to fix it? [Then paste in code and error message.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
+---
+
 ### Writing Tests
 
 - Can you generate a unit test for the searchStates function using JEST? [Paste in code.] ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+
+---
 
 ### Building An API
 
@@ -426,9 +474,13 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
   - Use TypeScript in this code.
   - Generate this API using Python and FastAPI. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 
+---
+
 ### Natural Language Programming
 
 - I need a REST API built with Rust. It should have products with the fields of id, name, description, and category_id. The category_id should have a relationship with another resource called categories. Categories should have an id and a name field. Let's use an SQLite database. Use any frameworks and libraries that you see fit. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+
+---
 
 ### Python Examples
 
@@ -440,12 +492,16 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 - How can I scrape a web page using Python? ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 - Give me a function to convert c to f in Python. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 
+---
+
 ### HTML, CSS, and JavaScript Examples
 
 - Write the HTML and CSS code for displaying a card. Add a button below the card content. When I hover my mouse over the card, I want the card to slightly slide up.
   - Can you rewrite this code using TailwindCSS?
   - When I click on the button, send an HTTP request to /api/products. Instead of the fetch API, use Axios. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - I need the HTML and CSS in separate files for a blog homepage with a navbar with a logo on the left and links on the right. A hero area with a background image and centered text. Under that should be 3 cards in a horizontal flexbox. The cards should have light gray background and a box shadow. Use light blues and greens and use the poppies font. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+
+---
 
 ### React Examples
 
@@ -455,6 +511,8 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
   - Add a button that toggles the visibility of the text.
   - Now write a test for this app using Playwright.
   - Document this code. ([Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A))
+
+---
 
 ### SQL Examples
 
@@ -482,9 +540,13 @@ The good news is that OpenAI's documentation is detailed and easy to read. When 
   - [Community libraries (multiple languages)](https://platform.openai.com/docs/libraries/community-libraries)
 - [ChatGPT Application Examples](https://platform.openai.com/examples)
 
+---
+
 ### Obtaining an API key
 
 After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps. (And always keep this key safe and secret!)
+
+---
 
 ### Examples of API usage
 
@@ -505,6 +567,8 @@ The OpenAI API can do a lot of various things - it's a powerful tool meant to be
 ### Closing Credits
 
 A special shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidance on where to get started with ChatGPT. Videos by [The AI Advantage](https://www.youtube.com/watch?v=pGOyw_M1mNE) and [sentdex](https://www.youtube.com/watch?v=c-g6epk3fFE) helped me get started with ChatGPT's API in Python and Gradio. Doodles by [Doodle Ipsum](https://doodleipsum.com/). And again, [Janelle Shane's book](https://www.janelleshane.com/book-you-look-like-a-thing) is a must-read.
+
+---
 
 ### Cited Sources
 
