@@ -4,6 +4,9 @@
 
 Whether you don't want to touch any code or want to build your first chatbot, ChatGPT can help.
 
+V1: Completed April 24, 2023.
+V2: WIP (adding more specific API documentation and examples).
+
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=7bba2d304a189734c2a8226c512748dd)
@@ -102,6 +105,8 @@ So in relation to AI and machine learning, **ChatGPT** is a particular machine l
 
 > _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide. Thank you, Janelle!_
 
+---
+
 ### Metaphors For What ChatGPT Can (and Can't) Do
 
 There are a few different ways to look at ChatGPT. Here are a few metaphors to get you started:
@@ -137,6 +142,8 @@ It learns by example (like algorithms learning from data) and has _no_ idea what
 5. AI will take the path of least resistance.
 
 So ChatGPT is less an intelligent machine that's timid and uptight from its own knowledge and servitude and more like a bunch of well-meaning worms doing their best.
+
+---
 
 ### Project Goals and Intended Audience
 
