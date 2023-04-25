@@ -13,7 +13,7 @@ _Version 1.1.0: Updated outline to split documentation into three overall parts 
 ## The TL;DR
 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
-- _After a high-level introduction, this guide is divided into sections for non-developers ([Part A](#part-a)) and developers ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
+- _After a high-level introduction, this guide divides into sections for non-developers ([Part A](#part-a)) and developers ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
 - _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
 
 ---
@@ -132,21 +132,28 @@ So in relation to AI and machine learning, **ChatGPT** is a particular machine l
 
 For non-developers:
 
-- Ask questions or give commands to ChatGPT to then take specific actions and steps. (i.e. Explain JavaScript like I'm a 5-year-old, and then explain it to me like a senior engineer.)
-- Generate ideas, documentation, or dummy data (i.e. I need some sample data. I need a JSON array of 10 colleges with at least 10 fields each.)
-- Extract summaries, key words, and other data from text, links, or other online resources (i.e. I'm applying for this role [paste in job posting URL or text] what keywords should I include on my resume?)
-- Craft personalized study guides for future learning. (i.e. Give me a study plan to learn Python for data science within a month with free video resources.)
-- Create first drafts of various text content (i.e. I have three years of experience coding in HTML, CSS, and JavaScript. Write a resume for me.)
-- Present high-level or technical problems and ask ChatGPT for potential solutions and examples. (i.e. Write an Excel formula to add up values in cells B2 through B10.)
-- Refine text or code with specific goals. (i.e. Here is my resume [paste in text] do you spot any typos? If so, please list them.)
+- **Ask** questions or give commands to ChatGPT to then take specific actions and steps.
+  - i.e. Explain JavaScript like I'm a 5-year-old, and then explain it to me like a senior engineer.
+- **Generate** ideas, documentation, or dummy data.
+  - i.e. I need some sample data. I need a JSON array of 10 colleges with at least 10 fields each.
+- **Extract** summaries, key words, and other data from text, links, or other online resources.
+  - i.e. I'm applying for this role [paste in job posting URL or text] what keywords should I include on my resume?
+- **Draft** personalized study guides for future learning.
+  - i.e. Give me a study plan to learn Python for data science within a month with free video resources.
+- **Create** first drafts of various text content.
+  - i.e. I have three years of experience coding in HTML, CSS, and JavaScript. Write a resume for me.
+- **Present** high-level or technical problems and ask ChatGPT for potential solutions and examples.
+  - i.e. Write an Excel formula to add up values in cells B2 through B10.
+- **Refine** text or code with specific goals.
+  - i.e. Here is my resume [paste in text] do you spot any typos? If so, please list them.
 - And more!
 
 For software engineers:
 
-- Develop chatbots for customer service or sales
-- Create virtual assistants for personal or business use
-- Integrate ChatGPT with NLP tools to automate tasks
-- Generate actual draft content for marketing or advertising campaigns
+- **Develop** chatbots for customer service or sales
+- **Create** virtual assistants for personal or business use
+- **Integrate** ChatGPT with NLP tools to automate tasks
+- **Generate** actual content drafts for marketing or advertising campaigns
 - And more!
 
 ---
@@ -226,15 +233,29 @@ All you need to get started is a free OpenAI account:
 
 ### Writing Your First Prompt
 
-WIP.
+All you have to do is write your prompt in the "Send a message" text box, press enter, and ChatGPT will respond. It's that easy!
+
+> Try entering this prompt as a first time: "Tell me a joke."
 
 ---
 
 ### The Art of a Good Prompt
 
-WIP.
+ChatGPT is only as good as your prompt. Here are some starting tips in order to write a good prompt:
 
-![image](https://doodleipsum.com/700x700?bg=D96363&i=0ca4af8cbb660d47f4f18a56fe91ab5b)
+- Keep your prompt clear and concise.
+- Ask a specific question or give a clear command. Don't write something broad or open-ended.
+- Provide context for your prompt; ChatGPT will not be able to pick this up on its own.
+- Use correct grammar and spelling.
+- Avoid biased or discriminatory language.
+
+**A Bad Prompt**: Where to eat in Chi.
+
+**An OK Prompt**: Can you recommend any good restaurants in Chicago?
+
+**A Good Prompt**: I'm visiting Chicago for the first time this summer and I'm looking for some great places to eat. Specifically, I'm interested in seafood and italian cuisine. Do you have any recommendations for restaurants that fit this criteria? The closer these recommendations are to mass transit, the better. I don't want to spend more than $100 on a meal if possible.
+
+![image](https://doodleipsum.com/700/flat?bg=D96363&i=f0680f8b2b8802c8321a580f63ec3d40)
 
 ## III. Examples of ChatGPT Prompts <a name="prompt-examples"></a>
 
@@ -647,7 +668,7 @@ A shout-out to [Nick Arocho](https://www.nickarocho.com/) for his initial guidan
 
 ### Cited Sources
 
-The following videos were vital in helping me make this guide. For further learning, I encourage you to watch these videos by these creators:
+The following videos were vital in helping me make this guide. For further learning, I encourage you to watch these videos by the following creators:
 
 - [Traversy](https://www.youtube.com/watch?v=o_joulYVndM)
 - [Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)
