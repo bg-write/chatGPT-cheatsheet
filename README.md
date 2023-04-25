@@ -15,6 +15,7 @@ _Version 1.1.0: Updated outline to split documentation into three overall parts 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
 - _After a high-level introduction, this guide divides into sections for non-developers ([Part A](#part-a)) and developers ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
 - _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
+- _Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
 ---
 
@@ -133,7 +134,7 @@ So in relation to AI and machine learning, **ChatGPT** is a particular machine l
 For non-developers:
 
 - **Ask** questions or give commands to ChatGPT to then take specific actions and steps.
-  - i.e. Explain JavaScript like I'm a 5-year-old, and then explain it to me like a senior engineer.
+  - i.e. Explain JavaScript like I'm a 5-year-old, and then explain it to me like I'm a senior engineer.
 - **Generate** ideas, documentation, or dummy data.
   - i.e. I need some sample data. I need a JSON array of 10 colleges with at least 10 fields each.
 - **Extract** summaries, key words, and other data from text, links, or other online resources.
@@ -176,7 +177,7 @@ ChatGPT's access to information is impressive. Still, dumb questions don't yield
 
 #### ChatGPT is like a dog that wants to play fetch
 
-It's very excited to play fetch with you (retrieve whatever data is needed to help you solve a problem) even if it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want it. ChatGPT only wants a treat and be told it's a good boy. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
+It's very excited to play fetch with you (retrieve whatever data is needed to help you solve a problem) but it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want "stick." ChatGPT only wants a treat and to be told it's a good boy. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
 
 #### ChatGPT is like an impressionable child
 
@@ -184,7 +185,7 @@ It learns by example (like algorithms learning from data) and has _no_ idea what
 
 #### ChatGPT is NOT like C-3PO (it's more like a swarm of flies ... or a pile of worms)
 
-[Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing)'s five principles of "AI Weirdness" is as follows:
+[Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing)'s five principles of "AI Weirdness":
 
 1. The dangers of AI is not that it's too smart ... it's that it's not smart enough.
 2. AI has the approximate brainpower of a worm.
@@ -233,15 +234,15 @@ All you need to get started is a free OpenAI account:
 
 ### Writing Your First Prompt
 
-All you have to do is write your prompt in the "Send a message" text box, press enter, and ChatGPT will respond. It's that easy!
+All you have to do is write your prompt in the "Send a message" text box, press enter, and watch ChatGPT respond. It's that easy!
 
-> Try entering this prompt as a first time: "Tell me a joke."
+> Try entering this prompt to start: "Tell me a dad joke."
 
 ---
 
 ### The Art of a Good Prompt
 
-ChatGPT is only as good as your prompt. Here are some starting tips in order to write a good prompt:
+ChatGPT is only as good as your prompt. Here are some starting tips on writing good prompts:
 
 - Keep your prompt clear and concise.
 - Ask a specific question or give a clear command. Don't write something broad or open-ended.
@@ -249,11 +250,17 @@ ChatGPT is only as good as your prompt. Here are some starting tips in order to 
 - Use correct grammar and spelling.
 - Avoid biased or discriminatory language.
 
-**A Bad Prompt**: Where to eat in Chi.
+#### A Bad Prompt
 
-**An OK Prompt**: Can you recommend any good restaurants in Chicago?
+Where to eat in Chi.
 
-**A Good Prompt**: I'm visiting Chicago for the first time this summer and I'm looking for some great places to eat. Specifically, I'm interested in seafood and italian cuisine. Do you have any recommendations for restaurants that fit this criteria? The closer these recommendations are to mass transit, the better. I don't want to spend more than $100 on a meal if possible.
+#### An OK Prompt
+
+Can you recommend any good restaurants in Chicago?
+
+#### A Good Prompt
+
+I'm visiting Chicago for the first time this summer and am looking for some great places to eat. Specifically, I'm interested in seafood and italian cuisine. Do you have any recommendations for restaurants that fit this criteria? The closer these recommendations are to mass transit, the better. I don't want to spend more than $100 on a meal if possible.
 
 ![image](https://doodleipsum.com/700/flat?bg=D96363&i=f0680f8b2b8802c8321a580f63ec3d40)
 
