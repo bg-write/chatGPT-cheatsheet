@@ -2,9 +2,9 @@
 
 # ChatGPT Cheatsheet
 
-A guide to how ChatGPT can help us (written by a skeptic).
+A guide to how ChatGPT can help non-developers and software engineers (written by a skeptic).
 
-_Version 1.0.0: Completed April 24, 2023._
+_Version 1.1.0: Updated outline to split documentation into three overall parts with introduction._
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
@@ -13,11 +13,8 @@ _Version 1.0.0: Completed April 24, 2023._
 ## The TL;DR
 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
-- _You don't have to know code to use ChatGPT; all you need is a free [OpenAI](https://openai.com/blog/chatgpt) account._
-- _If you're a developer trying to study ChatGPT's API and make your first chatbot, you can go straight to [Getting Started](#getting-started), [Usage](#usage), or [API Reference](#api-reference)._
-- _AI is only as good as the data it's trained on. The better and more specific your prompt, the better ChatGPT can help._
-- _Check out [API Reference](#api-reference) to see various examples of what you can (and can't) (and shouldn't) do with ChatGPT and its API._
-- _This guide is like a menu: pick and choose whatever you need._
+- _After a high-level introduction, this guide is divided into sections for non-developers ([Part A](#part-a)) and developers ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
+- _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
 
 ---
 
@@ -26,22 +23,19 @@ _Version 1.0.0: Completed April 24, 2023._
 I. [Introduction](#intro)
 
 - Overview of ChatGPT
+- How You Can Use ChatGPT
 - Metaphors For What ChatGPT Can (and Can't) Do
 - Project Goals and Intended Audience
 
-II. [Getting Started](#getting-started)
+### [PART A: Getting Started with ChatGPT for Non-Developers](#part-a)
 
-- System Requirements
-- Installing Dependencies
-- Running the Code
+II. [Getting Started (Prompt Portal)](#getting-started-ND)
 
-III. [Usage](#usage)
+- Step-by-Step Guide
+- Writing Your First Prompt
+- The Art of a Good Prompt
 
-- Overview of Features
-- Using `chat_cli.py` (ChatGPT in the Command Line)
-- Using `chat_ui.py` (ChatGPT Deployed on Localhost)
-
-IV. [Examples of ChatGPT Prompts and Best Practices](#prompt-examples)
+III. [Examples of ChatGPT Prompts](#prompt-examples)
 
 - General Learning, Troubleshooting, Or Brainstorming
 - Creating Your Own Study Guide
@@ -64,18 +58,35 @@ IV. [Examples of ChatGPT Prompts and Best Practices](#prompt-examples)
 - React Examples
 - SQL Examples
 
-V. [API Reference](#api-reference)
+### [PART B: Getting Started with ChatGPT for Software Engineers](#part-b)
 
-- Overview of the OpenAI API
+IV. [Getting Started (ChatGPT's API)](#getting-started-D)
+
+- System Requirements
+- Installing Dependencies
+- Running the Code
+
+V. [Usage](#usage)
+
+- Overview of API Features
+- Using `chat_cli.py` (ChatGPT in the Command Line)
+- Using `chat_ui.py` (ChatGPT Deployed on Localhost)
+
+VI. [API Reference](#api-reference)
+
+- API Overview
+- API Quick Links
 - Obtaining an API key
 - Examples of API usage
 
-VI. [Giving Thanks](#legal)
+### [PART C: Conclusion & References](#part-c)
+
+VII. [Giving Thanks](#legal)
 
 - Closing Credits
 - Cited Sources
 
-VII. [Glossary](#glossary)
+VIII. [Glossary](#glossary)
 
 - Artificial Intelligence (AI)
 - Machine Learning
@@ -117,9 +128,32 @@ So in relation to AI and machine learning, **ChatGPT** is a particular machine l
 
 ---
 
+### How You Can Use ChatGPT
+
+For non-developers:
+
+- Ask questions or give commands to ChatGPT to then take specific actions and steps. (i.e. Explain JavaScript like I'm a 5-year-old, and then explain it to me like a senior engineer.)
+- Generate ideas, documentation, or dummy data (i.e. I need some sample data. I need a JSON array of 10 colleges with at least 10 fields each.)
+- Extract summaries, key words, and other data from text, links, or other online resources (i.e. I'm applying for this role [paste in job posting URL or text] what keywords should I include on my resume?)
+- Craft personalized study guides for future learning. (i.e. Give me a study plan to learn Python for data science within a month with free video resources.)
+- Create first drafts of various text content (i.e. I have three years of experience coding in HTML, CSS, and JavaScript. Write a resume for me.)
+- Present high-level or technical problems and ask ChatGPT for potential solutions and examples. (i.e. Write an Excel formula to add up values in cells B2 through B10.)
+- Refine text or code with specific goals. (i.e. Here is my resume [paste in text] do you spot any typos? If so, please list them.)
+- And more!
+
+For software engineers:
+
+- Develop chatbots for customer service or sales
+- Create virtual assistants for personal or business use
+- Integrate ChatGPT with NLP tools to automate tasks
+- Generate actual draft content for marketing or advertising campaigns
+- And more!
+
+---
+
 ### Metaphors For What ChatGPT Can (and Can't) Do
 
-There are a few different ways to look at ChatGPT. Here are a few metaphors to get you started:
+There are a few different ways to approach ChatGPT. Here are a few metaphors to get you started:
 
 #### ChatGPT is like a very tech-savvy intern
 
@@ -157,184 +191,52 @@ So ChatGPT is less an intelligent machine that's timid and uptight from its own 
 
 ### Project Goals and Intended Audience
 
-The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you've never touched code and are only using the popular chat functionality or a developer using OpenAI's API to build your first ChatGPT app.
+The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning.
+
+This could be your first-ever guide to ChatGPT, whether you've never touched code and are only using the popular chat functionality or a developer using the API to build your first ChatGPT app.
 
 This saying has already become cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
 
-![image](https://doodleipsum.com/700x700?bg=D96363&i=c194787e015a971b4da76eccefb9bfa7)
-
-## II. Getting Started <a name="getting-started"></a>
-
-[Return to top](#top)
-
-### System Requirements
-
-ChatGPT
-
-- [A free OpenAI account](https://openai.com/blog/chatgpt)
-- A web browser with secure internet
-
-> TROUBLESHOOTING: Sometimes when using ChatGPT on the web, if you don't use it after a few minutes, you'll get errors with each new prompt you try to enter. Refreshing your web browser fixes this issue.
-
-Mac
-
-- macOS 10.15 or later
-- At least 4GB of RAM
-- 2GHz Intel Core i5 or equivalent CPU
-
-Windows:
-
-- Windows 10 or later
-- At least 4GB of RAM
-- 2GHz Intel Core i5 or equivalent CPU
-
-Linux:
-
-- Ubuntu 18.04 or later, or a similar Linux distribution
-- At least 4GB of RAM
-- 2GHz Intel Core i5 or equivalent CPU
-
-> _NOTE: For the sake of simplicity and accessibility, we're using GPT-3. GPT-4 is available but only in beta; this guide will be updated once GPT-4 and future versions are more widely available._
+> _NOTE: For the sake of simplicity and accessibility, we're using GPT-3. GPT-4 is available but only in beta. This guide will be updated once GPT-4 and future versions are more widely available._
 >
 > _IMPORTANT: Be mindful of everything you send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
----
+![image](https://doodleipsum.com/700x700?bg=D96363&i=c194787e015a971b4da76eccefb9bfa7)
 
-### Installing Dependencies
+## PART A: Getting Started with ChatGPT for Non-Developers <a name="part-a"></a>
 
-Both chatbot examples in this guide are written in Python, so download the latest versions of the following:
+This section provides a beginner's guide to ChatGPT for non-developers who want to use the ChatGPT prompt portal to generate responses to their text inputs.
 
-- [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great info on how to get started with Python)
-- [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
-- [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbot; any UI library is fine, though Gradio is easy to use with OpenAI.)
-- [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep my secret key hidden!)
-
-As of this writing, I'm using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
-
-> _Though this guide focuses on Python, other languages can use OpenAI's API. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) has a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video reviewing the basics of creating a chatbot with vanilla JavaScript._
-
----
-
-### Running the Code
-
-To run the code in either `.py` file:
-
-1. Open a new terminal.
-2. Run the python command and the name of the file. (i.e `python chat_cli.py` or `python chat_ui.py`).
-3. The terminal will provide next steps.
-
-When you want to stop either program:
-
-1. Go into the terminal where you're running the chat.
-2. On your keyboard, keypress `control + c`.
-
-![image](https://doodleipsum.com/700x700?bg=D96363&i=63ba4d9815821585ba01b47e5b6af89e)
-
-## III. Usage <a name="usage"></a>
+## II. Getting Started (Prompt Portal) <a name="getting-started-ND"></a>
 
 [Return to top](#top)
 
-### Overview of Features
+### Step-by-Step Guide
 
-ChatGPT is unique in how much it can offer to users. Notable features include:
+All you need to get started is a free OpenAI account:
 
-- **Easy integration**: you only need a few lines of code to add ChatGPT into your app. (See `chat_cli.py` and `chat_ul.py` to see this code in action.)
-- **Customizable response parameters**: it's possible to control a response's length, its temperature (rate of randomness), the number of responses at a time, and more.
-- **Rich responses**: ChatGPT can be flexible with the type of content it responds with, including longform prose, bullet-point lists, and code snippets.
-- **Multi-turn conversations**: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
+- Sign up for [OpenAI](https://openai.com/blog/chatgpt).
+- Access the prompt portal.
+- Enter your text input.
+- Watch ChatGPT generate its output.
 
-> ChatGPT is constantly changing and updating. To see all updates made so far, please refer to OpenAI's ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
-
----
-
-### Using `chat_cli.py` (ChatGPT in the Command Line)
-
-This is a very simple example of how to build your own chatbot that runs in the command line with ChatGPT. The file's main feature is its `chatbot` function, which is broken down like so:
-
-```python
-message_history = []
-```
-
-We first create an empty list called `message_history` that'll store our chat's conversation. We then create a `while` loop that'll repeat until the user manually stop the app. The following code snippets live inside this `while` loop.
-
-```python
-user_input = input("USER PROMPT > ")
-print(f"YOU ASKED: '{user_input}' ...")
-```
-
-We prompt the user to input data, which we store in our new variable `user_input`. Printing `user_input` confirms to the user what they entered.
-
-```python
-message_history.append({"role": "user", "content": user_input})
-```
-
-We then append our new `user_input` into `message_history`, as well as its role as a "user." We then create a `try-except` block that'll handle potential errors (more on that in a moment).
-
-```python
-completion = openai.ChatCompletion.create(
-  model="gpt-3.5-turbo",
-  messages=message_history,
-  max_tokens=1024,
-  n=1,
-  stop=None,
-  temperature=0.5,
-)
-```
-
-_This_ is how we finally begin talking to ChatGPT - by creating a `completion`. This basic `openai.ChatCompletion.create()` method includes the following:
-
-- `model`: the specific GPT-3 language model we're using.
-- `messages`: our chat history.
-- `max_tokens`: the max number of tokens to generate in a response.
-- `n`: the number of responses to return at a time.
-- `stop`: define any specific conditions that'll stop a response.
-- `temperature`: the level of randomness in a generated response (from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response)
-
-```python
-reply_content = completion.choices[0].message.content
-print("CHATGPT RESPONSE:", reply_content)
-```
-
-Our new `reply_content` variable extracts and stores our API's `completion`. The API provides a lot of information, but `reply_content` is only concern with the content of the actual message. Printing `reply_content` allows the user to see the API's response and only the information they want to see.
-
-```python
-message_history.append({
-  "role": "assistant",
-  "content": reply_content
-})
-```
-
-We then append our new `reply_content` to `message_history`, and note its role as an "assistant."
-
-This cycle repeats until the user manually stops the app with the keypress `control + c`.
-
-```python
-except openai.error.OpenAIError as error:
-  print("OpenAI API error:", error)
-```
-
-All the above code under the `try` block is executed when there are no issues. When issues do come up, this `except` block kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
+> TROUBLESHOOTING: Sometimes when using ChatGPT on the web, if you don't use it after a few minutes, you'll get errors with each new prompt you try to enter. Refreshing your web browser fixes this issue.
 
 ---
 
-### Using `chat_ui.py` (ChatGPT Deployed on Localhost)
+### Writing Your First Prompt
 
-This an example of how to deploy a simple chatbot locally in your web browser. The overall structure is similar to `chat_cli.py`, but it's worth nothing this important difference:
+WIP.
 
-```python
-messages = [{
-    "role":
-    "system",
-    "content":
-    "You are a music curator with decades of experience in the music industry who helps people discover great new music from any era or genre. You value the classics yet always try to steer new listeners to discover music they might not have heard before."
-}]
-```
+---
 
-By defining `messages` early with this specific "system" content, we're setting the context for our chatbot. With this example, the chatbot now acts like a music curator. However, it's easy to change the system's content to set the chatbot to talk like a financial planner, or a sassy middle school teacher.
+### The Art of a Good Prompt
 
-![image](https://doodleipsum.com/700x700?bg=D96363&i=62784286f00abd02f2e458828b87d767)
+WIP.
 
-## IV. Examples of ChatGPT Prompts and Best Practices <a name="prompt-examples"></a>
+![image](https://doodleipsum.com/700x700?bg=D96363&i=0ca4af8cbb660d47f4f18a56fe91ab5b)
+
+## III. Examples of ChatGPT Prompts <a name="prompt-examples"></a>
 
 [Return to top](#top)
 
@@ -521,15 +423,186 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=1d9b55f18d3b7eb28a728bd315671fb0)
 
-## V. API Reference <a name="api-reference"></a>
+## PART B: Getting Started with ChatGPT for Software Engineers <a name="part-b"></a>
+
+This section provide a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT's AI into their own applications and projects.
+
+## IV. Getting Started (ChatGPT's API) <a name="getting-started-D"></a>
 
 [Return to top](#top)
 
-### Overview of the OpenAI API
+### System Requirements
+
+ChatGPT
+
+- [A free OpenAI account](https://openai.com/blog/chatgpt)
+- [Secret API key](https://platform.openai.com/account/api-keys)
+
+Mac
+
+- macOS 10.15 or later
+- At least 4GB of RAM
+- 2GHz Intel Core i5 or equivalent CPU
+
+Windows:
+
+- Windows 10 or later
+- At least 4GB of RAM
+- 2GHz Intel Core i5 or equivalent CPU
+
+Linux:
+
+- Ubuntu 18.04 or later, or a similar Linux distribution
+- At least 4GB of RAM
+- 2GHz Intel Core i5 or equivalent CPU
+
+---
+
+### Installing Dependencies
+
+Both chatbot examples in this guide are written in Python, so download the latest versions of the following:
+
+- [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great info on how to get started with Python)
+- [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
+- [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbot; any UI library is fine, though Gradio is easy to use with OpenAI.)
+- [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep my secret key hidden!)
+
+As of this writing, I'm using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
+
+> _Though this guide focuses on Python, other languages can use OpenAI's API. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) has a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video reviewing the basics of creating a chatbot with vanilla JavaScript._
+
+---
+
+### Running the Code
+
+To run the code in either `.py` file:
+
+1. Open a new terminal.
+2. Run the python command and the name of the file. (i.e `python chat_cli.py` or `python chat_ui.py`).
+3. The terminal will provide next steps.
+
+When you want to stop either program:
+
+1. Go into the terminal where you're running the chat.
+2. On your keyboard, keypress `control + c`.
+
+![image](https://doodleipsum.com/700x700?bg=D96363&i=63ba4d9815821585ba01b47e5b6af89e)
+
+## V. Usage <a name="usage"></a>
+
+[Return to top](#top)
+
+### Overview of Features
+
+ChatGPT is unique in how much it can offer to users. Notable features include:
+
+- **Easy integration**: you only need a few lines of code to add ChatGPT into your app. (See `chat_cli.py` and `chat_ul.py` to see this code in action.)
+- **Customizable response parameters**: it's possible to control a response's length, its temperature (rate of randomness), the number of responses at a time, and more.
+- **Rich responses**: ChatGPT can be flexible with the type of content it responds with, including longform prose, bullet-point lists, and code snippets.
+- **Multi-turn conversations**: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
+
+> ChatGPT is constantly changing and updating. To see all updates made so far, please refer to OpenAI's ever-evolving [release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes).
+
+---
+
+### Using `chat_cli.py` (ChatGPT in the Command Line)
+
+This is a very simple example of how to build your own chatbot that runs in the command line with ChatGPT. The file's main feature is its `chatbot` function, which is broken down like so:
+
+```python
+message_history = []
+```
+
+We first create an empty list called `message_history` that'll store our chat's conversation. We then create a `while` loop that'll repeat until the user manually stop the app. The following code snippets live inside this `while` loop.
+
+```python
+user_input = input("USER PROMPT > ")
+print(f"YOU ASKED: '{user_input}' ...")
+```
+
+We prompt the user to input data, which we store in our new variable `user_input`. Printing `user_input` confirms to the user what they entered.
+
+```python
+message_history.append({"role": "user", "content": user_input})
+```
+
+We then append our new `user_input` into `message_history`, as well as its role as a "user." We then create a `try-except` block that'll handle potential errors (more on that in a moment).
+
+```python
+completion = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=message_history,
+  max_tokens=1024,
+  n=1,
+  stop=None,
+  temperature=0.5,
+)
+```
+
+_This_ is how we finally begin talking to ChatGPT - by creating a `completion`. This basic `openai.ChatCompletion.create()` method includes the following:
+
+- `model`: the specific GPT-3 language model we're using.
+- `messages`: our chat history.
+- `max_tokens`: the max number of tokens to generate in a response.
+- `n`: the number of responses to return at a time.
+- `stop`: define any specific conditions that'll stop a response.
+- `temperature`: the level of randomness in a generated response (from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response)
+
+```python
+reply_content = completion.choices[0].message.content
+print("CHATGPT RESPONSE:", reply_content)
+```
+
+Our new `reply_content` variable extracts and stores our API's `completion`. The API provides a lot of information, but `reply_content` is only concern with the content of the actual message. Printing `reply_content` allows the user to see the API's response and only the information they want to see.
+
+```python
+message_history.append({
+  "role": "assistant",
+  "content": reply_content
+})
+```
+
+We then append our new `reply_content` to `message_history`, and note its role as an "assistant."
+
+This cycle repeats until the user manually stops the app with the keypress `control + c`.
+
+```python
+except openai.error.OpenAIError as error:
+  print("OpenAI API error:", error)
+```
+
+All the above code under the `try` block is executed when there are no issues. When issues do come up, this `except` block kicks in. This is an exception handler that'll print any errors to the user for future troubleshooting.
+
+---
+
+### Using `chat_ui.py` (ChatGPT Deployed on Localhost)
+
+This an example of how to deploy a simple chatbot locally in your web browser. The overall structure is similar to `chat_cli.py`, but it's worth nothing this important difference:
+
+```python
+messages = [{
+    "role":
+    "system",
+    "content":
+    "You are a music curator with decades of experience in the music industry who helps people discover great new music from any era or genre. You value the classics yet always try to steer new listeners to discover music they might not have heard before."
+}]
+```
+
+By defining `messages` early with this specific "system" content, we're setting the context for our chatbot. With this example, the chatbot now acts like a music curator. However, it's easy to change the system's content to set the chatbot to talk like a financial planner, or a sassy middle school teacher.
+
+![image](https://doodleipsum.com/700x700?bg=D96363&i=62784286f00abd02f2e458828b87d767)
+
+## VI. API Reference <a name="api-reference"></a>
+
+[Return to top](#top)
+
+### API Overview
 
 The good news is that OpenAI's documentation is detailed and easy to read. When in doubt, go straight to the source: <https://platform.openai.com/>
 
-#### API Quick Links
+---
+
+### API Quick Links
 
 - [OpenAI's Playground](https://platform.openai.com/playground) (to test out API completions)
 - ChatGPT's API libraries:
@@ -558,7 +631,11 @@ The OpenAI API can do a lot of various things - it's a powerful tool meant to be
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c0d1afba2fed7fef82cfc60fbf999cf7)
 
-## VI. Giving Thanks <a name="legal"></a>
+## PART C: Conclusion & References <a name="part-c"></a>
+
+This section provides credits, cited sources, and a glossary for both non-developers and software engineers.
+
+## VII. Giving Thanks <a name="legal"></a>
 
 [Return to top](#top)
 
@@ -583,7 +660,7 @@ The following videos were vital in helping me make this guide. For further learn
 
 ![image](https://doodleipsum.com/700/flat?bg=D96363&i=34b1669d12f4f37be2f8fda91b87b784)
 
-## VII. Glossary <a name="glossary"></a>
+## VIII. Glossary <a name="glossary"></a>
 
 [Return to top](#top)
 
