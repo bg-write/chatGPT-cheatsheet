@@ -2,7 +2,7 @@
 
 # ChatGPT Cheatsheet
 
-Learn how to get started with ChatGPT's prompt portal and its API.
+Learn how to start using ChatGPT's prompt portal and API, whether you're new to AI or trying to build your first chatbot.
 
 _Version 1.1.0: Updated outline to split documentation into three overall parts with introduction._
 
@@ -13,7 +13,7 @@ _Version 1.1.0: Updated outline to split documentation into three overall parts 
 ## The TL;DR
 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
-- _After a high-level introduction, this guide divides into sections for just using the prompt portal ([Part A](#part-a)) and then the actual API ([Part B](#part-b)). [Part C](#part-c) is a reference for everyone._
+- _After a high-level introduction, this guide divides into sections for just using the prompt portal ([Part A](#part-a)) and then the actual API ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
 - _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
 - _Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
@@ -78,7 +78,7 @@ VI. [API Reference](#api-reference)
 - API Overview
 - API Quick Links
 - Obtaining an API key
-- Examples of API usage
+- API Usage (Example Applications)
 
 ### [PART C: Conclusion & References](#part-c)
 
@@ -151,10 +151,10 @@ For non-developers:
 
 For software engineers:
 
-- **Develop** chatbots for customer service or sales
-- **Create** virtual assistants for personal or business use
-- **Integrate** ChatGPT with NLP tools to automate tasks
-- **Generate** actual content drafts for marketing or advertising campaigns
+- **Develop** chatbots for customer service or sales.
+- **Create** virtual assistants for personal or business use.
+- **Integrate** ChatGPT with NLP tools to automate tasks.
+- **Generate** actual content drafts for marketing or advertising campaigns.
 - And more!
 
 ---
@@ -213,7 +213,7 @@ This saying has already become cliche, and it's true: AI will probably ("probabl
 
 ## PART A: ChatGPT's Prompt Portal <a name="part-a"></a>
 
-This section provides a beginner's guide to ChatGPT for non-developers and software engineers who want to just use ChatGPT's prompt portal to generate responses to their text inputs.
+This section provides a beginner's guide to ChatGPT for non-developers and software engineers who want to use ChatGPT's prompt portal to generate responses to their text inputs.
 
 ## II. Getting Started (Prompt Portal) <a name="getting-started-prompt"></a>
 
@@ -453,7 +453,7 @@ There are _so_ many ways to use ChatGPT. Below are some real examples and their 
 
 ## PART B: ChatGPT's API <a name="part-b"></a>
 
-This section provide a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT AI into their own applications.
+This section provide a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT's AI into their own applications.
 
 ## IV. Getting Started (ChatGPT's API) <a name="getting-started-api"></a>
 
@@ -626,18 +626,113 @@ By defining `messages` early with this specific "system" content, we're setting 
 
 ### API Overview
 
-The good news is that OpenAI's documentation is detailed and easy to read. When in doubt, go straight to the source: <https://platform.openai.com/>
+The good news is that OpenAI's documentation is detailed and easy to read. When in doubt, you can go straight to the source: <https://platform.openai.com/>
 
 ---
 
 ### API Quick Links
 
-- [OpenAI's Playground](https://platform.openai.com/playground) (to test out API completions)
-- ChatGPT's API libraries:
-  - [Python](https://platform.openai.com/docs/libraries/python-bindings)
-  - [Node.js](https://platform.openai.com/docs/libraries/node-js-library)
-  - [Community libraries (multiple languages)](https://platform.openai.com/docs/libraries/community-libraries)
-- [ChatGPT Application Examples](https://platform.openai.com/examples)
+#### Get started
+
+- [Introduction](https://platform.openai.com/docs/introduction)
+  - Overview
+  - Key concepts: Prompts, Tokens, and Models
+  - Next steps
+- [Quickstart](https://platform.openai.com/docs/quickstart)
+  - Introduction: An intro to "Completion"
+  - Start with an instruction
+  - Add some examples
+  - Adjust your settings: An intro to "Temperature"
+  - Build your application (Node.js or Python/Flask)
+  - Pricing
+  - Closing
+  - Next steps
+- [Libraries](https://platform.openai.com/docs/libraries)
+  - Python
+  - Node.js
+  - Community libraries (multiple languages)
+- [Models](https://platform.openai.com/docs/models/overview)
+  - Overview
+  - Model compatibility: API endpoints and model names
+  - Model updates
+  - GPT-4 (limited beta)
+  - GPT-3.5
+  - DALL-E (beta): generate and edit images using NLP
+  - Whisper (beta): convert audio into text
+  - Embeddings: convert text into a numerical form
+  - Moderation: detection of sensitive or unsafe text
+  - GPT-3
+- [Tutorials](https://platform.openai.com/docs/tutorials)
+  - Website Q&A with Embeddings
+
+#### Guides
+
+- [Text completion](https://platform.openai.com/docs/guides/completion)
+  - Introduction
+  - Prompt design: showing and telling, providing quality data, checking your settings, and more
+  - Inserting text
+  - Editing text
+- [Chat completion](https://platform.openai.com/docs/guides/chat)
+  - Introduction: examples of the API response format and managing tokens
+  - Instructing chat models
+  - Chat vs Completions
+  - FAQ
+- [Image generation w/ DALL-E](https://platform.openai.com/docs/guides/images/introduction)
+  - Introduction
+  - Usage: Generations, Edits, and Variations
+  - Language-specific tips: Node.js, TypeScript, and error handling
+- [Fine-tuning](https://platform.openai.com/docs/guides/fine-tuning)
+  - Preparing your dataset
+  - Advanced usage
+  - Weights & Biases
+  - Example notebooks: Classification and Question answering
+- [Embeddings](https://platform.openai.com/docs/guides/embeddings)
+  - Overview
+  - Use cases
+  - Limitations & risks
+- [Speech to text w/ Whisper](https://platform.openai.com/docs/guides/speech-to-text)
+  - Overview
+  - Quickstart: Transcriptions and Translations
+  - Supported languages
+  - Longer inputs
+  - Prompting
+- [Moderation](https://platform.openai.com/docs/guides/moderation)
+  - Overview
+  - Quickstart
+- [Rate limits](https://platform.openai.com/docs/guides/rate-limits)
+  - Overview
+  - Error mitigation
+  - Rate limit increase
+- [Error codes](https://platform.openai.com/docs/guides/error-codes)
+  - API errors: 401, 429, and 500
+  - Python library errors
+- [Safety best practices](https://platform.openai.com/docs/guides/safety-best-practices)
+  - The Moderation API
+  - Adversarial testing
+  - Human in the loop (HITL)
+  - Prompt engineering
+  - Know your customer (KYC)
+  - Constrain user input and limit output tokens
+  - Allow users to report issues
+  - Understand and communicate limitations
+  - End-user IDs
+- [Production best practices](https://platform.openai.com/docs/guides/production-best-practices)
+
+#### Chat Plugins (limited alpha)
+
+- [Introduction](https://platform.openai.com/docs/plugins/introduction)
+- [Getting Started](https://platform.openai.com/docs/plugins/getting-started)
+- [Authentication](https://platform.openai.com/docs/plugins/authentication)
+- [Examples](https://platform.openai.com/docs/plugins/examples)
+- [Production](https://platform.openai.com/docs/plugins/production)
+- [Plugin review](https://platform.openai.com/docs/plugins/review)
+
+#### More Helpful Links
+
+- [OpenAI Terms & Policies](https://openai.com/policies)
+- [Open AI Plugin policies](https://openai.com/policies/usage-policies#plugin-policies)
+- [API Completion Playground](https://platform.openai.com/playground)
+- [GPT comparison tool](https://gpttools.com/comparisontool)
 
 ---
 
@@ -647,7 +742,7 @@ After you've created an OpenAI account, head to the [API keys](https://platform.
 
 ---
 
-### Examples of API usage
+### API Usage (Example Applications)
 
 The OpenAI API can do a lot of various things - it's a powerful tool meant to be used for a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example applications that use ChatGPT in different use cases. Some overall categories of these examples include:
 
@@ -656,6 +751,10 @@ The OpenAI API can do a lot of various things - it's a powerful tool meant to be
 - **Content creation**: generate articles, blog posts, and product descriptions.
 - **Data analysis**: analyze large datasets and extract insights.
 - **Productivity tools**: automate tedious tasks or decision making like to-do lists, writing emails, or even playing chess.
+
+Specific example applications include:
+
+- TBD
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c0d1afba2fed7fef82cfc60fbf999cf7)
 
