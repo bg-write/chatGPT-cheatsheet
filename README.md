@@ -15,7 +15,7 @@ _Version 1.1.0: Updated outline to split documentation into three overall parts 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
 - _After a high-level introduction, this guide divides into sections for just using the prompt portal ([Part A](#part-a)) and then using the actual API ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
 - _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
-- _Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
+- _Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere on the Internet._
 
 ---
 
@@ -26,7 +26,7 @@ I. [Introduction](#intro)
 - Overview of ChatGPT
 - How You Can Use ChatGPT
 - Metaphors For What ChatGPT Can (and Can't) Do
-- Project Goals and Intended Audience
+- Guide Goals and Intended Audience
 
 ### [PART A: ChatGPT's Prompt Portal](#part-a)
 
@@ -123,7 +123,7 @@ OK ... but what does this all mean?
 
 So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a _lot_ of text data to generate human-like responses and carry out natural language processing tasks.
 
-**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many types of AI models (which I'll detail in a future version of this guide). For now, it's important to know that ChatGPT uses the **Transformer** model. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence at once.
+**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many types of AI models (more details to come in a future version of this guide). For now, it's important to know that ChatGPT uses the **Transformer** model. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence at once.
 
 > _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide. Thank you, Janelle!_
 
@@ -165,11 +165,11 @@ There are a few different ways to approach ChatGPT. Here are a few metaphors to 
 
 #### ChatGPT is like a very tech-savvy intern
 
-ChatGPT is helpful when assisting you in work that might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you also can fact-check and fine-tune on your own, you're in good hands.
+ChatGPT is helpful when assisting you in work that might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you also can fact-check and fine-tune on your own, you're in good hands. And though interns are so helpful, we still need to review the results before putting them into practice; if you submit your work and something goes wrong, do you want to tell your boss that "Well, that's what ChatGPT gave me"?
 
 #### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
 
-If the Internet is its sacred text, ChatGPT interprets and conveys its information in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas, but it should be taken with a grain of salt and not be a substitute for your own knowledge or abilities. AI is only as good and bias as the data it's trained on. ChatGPT is only as informed as the Internet allows it to be.
+If the Internet is its sacred text, ChatGPT interprets and conveys its information in a way that's easy to read and digest for as many people as possible. This communication can help visualize and break-down complicated or abstract ideas. It should also be taken with a grain of salt and not be a substitute for your own knowledge or abilities. AI is only as good and bias as the data it's trained on. ChatGPT is only as informed as the Internet allows it to be.
 
 #### ChatGPT is like a very knowledgeable person (but not a very smart person)
 
@@ -197,7 +197,7 @@ So ChatGPT is less an intelligent machine that's timid and uptight from its own 
 
 ---
 
-### Project Goals and Intended Audience
+### Guide Goals and Intended Audience
 
 The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning.
 
@@ -502,14 +502,14 @@ Linux:
 
 ### Installing Dependencies
 
-Both chatbot examples in this guide are written in Python, so download the latest versions of the following:
+Both chatbot examples in this guide are written in Python, so download the latest version of the following:
 
 - [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great information on how to get started with Python)
 - [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
 - [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbot; any UI library is fine, though Gradio is easy to use with OpenAI)
-- [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep my secret key hidden!)
+- [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep the secret key hidden!)
 
-As of this writing, I'm using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
+As of this writing, this guide is using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
 
 > _Though this guide focuses on Python, other languages can use OpenAI's API. For example, [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A) has a great video on using ChatGPT to build a "Hello, World" React app, and [Web Dev Simplified](https://www.youtube.com/watch?v=4qNwoAAfnk4) made a great video reviewing the basics of creating a chatbot with vanilla JavaScript._
 
@@ -517,7 +517,7 @@ As of this writing, I'm using the API model version "gpt-3.5-turbo," though this
 
 ### Running the Code
 
-To run the code in either `.py` file:
+This GitHub includes the Python files `chat_cli.py` and `chat_ui.py`. These are simple examples that we'll use to visualize ChatGPT's API in action. To run the code in either `.py` file:
 
 1. Open a new terminal.
 2. Run the python command and the name of the file. (i.e `python chat_cli.py` or `python chat_ui.py`).
@@ -534,7 +534,7 @@ When you want to stop either program:
 
 [Return to top](#top)
 
-This section introduces the actual use of ChatGPT's API and reviews our beginner examples found in `chat_cli.py` and `chat_ui.py`. We'll explore these concepts further in the [API Reference](#api-reference) section.
+This section introduces the actual use of ChatGPT's API and reviews our beginner examples found in `chat_cli.py` and `chat_ui.py`. We'll explore these concepts even further in the [API Reference](#api-reference) section.
 
 ### Overview of Features
 
@@ -590,7 +590,7 @@ _This_ is how we finally begin talking to ChatGPT - by creating a `completion`. 
 - `max_tokens`: the max number of tokens to generate in a response.
 - `n`: the number of responses to return at a time.
 - `stop`: define any specific conditions that'll stop a response.
-- `temperature`: the level of randomness in a generated response (from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response)
+- `temperature`: the level of randomness in a generated response (from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response).
 
 ```python
 reply_content = completion.choices[0].message.content
@@ -640,13 +640,15 @@ By defining `messages` early with this specific "system" content, we're setting 
 
 [Return to top](#top)
 
+OpenAI's documentation is very detailed and easy to navigate. This section is a breakdown of ChatGPT's overall documentation (sections "Get started," "Guides," and "Chat Plugins") with related links.
+
 ---
 
 ### API Documentation & Quick Links
 
-OpenAI's documentation is very detailed and easy to navigate. Below is a breakdown of ChatGPT's overall documentation (sections "Get started," "Guides," and "Chat Plugins") with related links. When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
+ When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
 
-For the scope of this guide, it's best to start with:
+For the scope of this guide, it's best to start with these documentation sections:
 
 1. [Introduction](https://platform.openai.com/docs/introduction)
 2. [Quickstart](https://platform.openai.com/docs/quickstart)
@@ -767,7 +769,7 @@ After you've created an OpenAI account, head to the [API keys](https://platform.
 
 ChatGPT's API is a powerful tool that can address a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example applications that use ChatGPT in different use cases. Here are some popular examples:
 
-#### Answering, Conversing & Helping
+#### Answering & Conversing
 
 - [Q&A](https://platform.openai.com/examples/default-qa): Answer questions based on existing knowledge.
 - [Factual answering](https://platform.openai.com/examples/default-factual-answering): Direct the model to provide factual answers and address knowledge gaps.
