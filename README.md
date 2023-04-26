@@ -39,6 +39,7 @@ II. [Getting Started (Prompt Portal)](#getting-started-prompt)
 III. [Examples of ChatGPT Prompts](#prompt-examples)
 
 - General Learning, Troubleshooting, Or Brainstorming
+- Editing, Summarizing, and Translating Text
 - Creating Your Own Study Guide
 - Generating Project Ideas
 - Preparing Your Resume For A Specific Application
@@ -272,6 +273,7 @@ There are _so_ many ways to use ChatGPT. Below are some real examples and their 
 ### General Learning, Troubleshooting, Or Brainstorming
 
 - What are the top 3 books for learning Java? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
+- List 10 science fiction books. ([OpenAI](#api-reference))
 - What are the key takeaways from Kurt Vonnegut's novel 'Slaughterhouse-Five'? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - What does the word "monozygotic" mean?
   - Now give me a synonym.
@@ -287,6 +289,18 @@ There are _so_ many ways to use ChatGPT. Below are some real examples and their 
   - What about YouTube videos? ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
 - Give me some ideas for an app that uses the geolocation API.
   - Tell me more about #3. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+
+---
+
+### Editing, Summarizing, and Translating Text
+
+- Correct this to standard English: [Paste in text you wish to correct]. ([OpenAI](#api-reference))
+- Summarize this for a second-grade student: [Paste in text you wish to summarize]. ([OpenAI](#api-reference))
+- Translate this into 1. French, 2. Spanish and 3. Japanese: What rooms do you have available? ([OpenAI](#api-reference))
+- Convert movie titles into emoji: Back to the Future, Batman, Transformers, and Star Wars. ([OpenAI](#api-reference))
+- A neutron star is the collapsed core of a massive supergiant star, which had a total mass of between 10 and 25 solar masses, possibly more if the star was especially metal-rich.[1] Neutron stars are the smallest and densest stellar objects, excluding black holes and hypothetical white holes, quark stars, and strange stars.[2] Neutron stars have a radius on the order of 10 kilometres (6.2 mi) and a mass of about 1.4 solar masses.[3] They result from the supernova explosion of a massive star, combined with gravitational collapse, that compresses the core past white dwarf star density to that of atomic nuclei. Tl;dr. ([OpenAI](#api-reference))
+- Create an analogy for this phrase: Questions are like arrows. ([OpenAI](#api-reference))
+- Convert this from first-person to third person (gender female): I decided to make a movie about Ada Lovelace. ([OpenAI](#api-reference))
 
 ---
 
@@ -427,6 +441,7 @@ There are _so_ many ways to use ChatGPT. Below are some real examples and their 
   - Can you rewrite this code using TailwindCSS?
   - When I click on the button, send an HTTP request to /api/products. Instead of the fetch API, use Axios. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - I need the HTML and CSS in separate files for a blog homepage with a navbar with a logo on the left and links on the right. A hero area with a background image and centered text. Under that should be 3 cards in a horizontal flexbox. The cards should have light gray background and a box shadow. Use light blues and greens and use the poppies font. ([Traversy](https://www.youtube.com/watch?v=o_joulYVndM))
+- Give the background-color CSS code for a color like a blue sky at dusk. ([OpenAI](#api-reference))
 
 ---
 
@@ -750,7 +765,7 @@ After you've created an OpenAI account, head to the [API keys](https://platform.
 
 ### API Example Applications
 
-ChatGPT's API is a powerful tool that can address a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example applications that use ChatGPT in different use cases. Here are some popular ChatGPT example applications:
+ChatGPT's API is a powerful tool that can address a wide range of problems. OpenAI's [Examples](https://platform.openai.com/examples) page includes a long list of example applications that use ChatGPT in different use cases. Here are some popular examples:
 
 #### Answering, Conversing & Helping
 
