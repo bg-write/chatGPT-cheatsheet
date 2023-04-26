@@ -2,7 +2,7 @@
 
 # ChatGPT Cheatsheet
 
-A guide to how ChatGPT can help non-developers and software engineers (written by a skeptic).
+Learn how to get started with ChatGPT's prompt portal and its API.
 
 _Version 1.1.0: Updated outline to split documentation into three overall parts with introduction._
 
@@ -13,7 +13,7 @@ _Version 1.1.0: Updated outline to split documentation into three overall parts 
 ## The TL;DR
 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
-- _After a high-level introduction, this guide divides into sections for non-developers ([Part A](#part-a)) and developers ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
+- _After a high-level introduction, this guide divides into sections for just using the prompt portal ([Part A](#part-a)) and then the actual API ([Part B](#part-b)). [Part C](#part-c) is a reference for everyone._
 - _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
 - _Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
@@ -28,9 +28,9 @@ I. [Introduction](#intro)
 - Metaphors For What ChatGPT Can (and Can't) Do
 - Project Goals and Intended Audience
 
-### [PART A: Getting Started with ChatGPT for Non-Developers](#part-a)
+### [PART A: ChatGPT's Prompt Portal](#part-a)
 
-II. [Getting Started (Prompt Portal)](#getting-started-ND)
+II. [Getting Started (Prompt Portal)](#getting-started-prompt)
 
 - Step-by-Step Guide
 - Writing Your First Prompt
@@ -59,9 +59,9 @@ III. [Examples of ChatGPT Prompts](#prompt-examples)
 - React Examples
 - SQL Examples
 
-### [PART B: Getting Started with ChatGPT for Software Engineers](#part-b)
+### [PART B: ChatGPT's API](#part-b)
 
-IV. [Getting Started (ChatGPT's API)](#getting-started-D)
+IV. [Getting Started (ChatGPT's API)](#getting-started-api)
 
 - System Requirements
 - Installing Dependencies
@@ -211,11 +211,11 @@ This saying has already become cliche, and it's true: AI will probably ("probabl
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c194787e015a971b4da76eccefb9bfa7)
 
-## PART A: Getting Started with ChatGPT for Non-Developers <a name="part-a"></a>
+## PART A: ChatGPT's Prompt Portal <a name="part-a"></a>
 
-This section provides a beginner's guide to ChatGPT for non-developers who want to use the ChatGPT prompt portal to generate responses to their text inputs.
+This section provides a beginner's guide to ChatGPT for non-developers and software engineers who want to just use ChatGPT's prompt portal to generate responses to their text inputs.
 
-## II. Getting Started (Prompt Portal) <a name="getting-started-ND"></a>
+## II. Getting Started (Prompt Portal) <a name="getting-started-prompt"></a>
 
 [Return to top](#top)
 
@@ -223,10 +223,10 @@ This section provides a beginner's guide to ChatGPT for non-developers who want 
 
 All you need to get started is a free OpenAI account:
 
-- Sign up for [OpenAI](https://openai.com/blog/chatgpt).
-- Access the prompt portal.
-- Enter your text input.
-- Watch ChatGPT generate its output.
+1. Sign up for [OpenAI](https://openai.com/blog/chatgpt).
+2. Access the prompt portal.
+3. Enter your text input.
+4. Watch ChatGPT generate its output.
 
 > TROUBLESHOOTING: Sometimes when using ChatGPT on the web, if you don't use it after a few minutes, you'll get errors with each new prompt you try to enter. Refreshing your web browser fixes this issue.
 
@@ -268,7 +268,7 @@ I'm visiting Chicago for the first time this summer and am looking for some grea
 
 [Return to top](#top)
 
-There are _so_ many ways to use ChatGPT. Below are some examples I especially love and their sources as needed. Each bullet point is a prompt that you would type into ChatGPT, and each sub-bullet is a follow-up prompt that you can write in the same open window.
+There are _so_ many ways to use ChatGPT. Below are some real examples and their sources as needed. Each bullet point is a prompt that you would type into ChatGPT, and each sub-bullet is a follow-up prompt that you can write in the same open window.
 
 ### General Learning, Troubleshooting, Or Brainstorming
 
@@ -451,11 +451,11 @@ There are _so_ many ways to use ChatGPT. Below are some examples I especially lo
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=1d9b55f18d3b7eb28a728bd315671fb0)
 
-## PART B: Getting Started with ChatGPT for Software Engineers <a name="part-b"></a>
+## PART B: ChatGPT's API <a name="part-b"></a>
 
-This section provide a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT's AI into their own applications and projects.
+This section provide a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT AI into their own applications.
 
-## IV. Getting Started (ChatGPT's API) <a name="getting-started-D"></a>
+## IV. Getting Started (ChatGPT's API) <a name="getting-started-api"></a>
 
 [Return to top](#top)
 
@@ -490,9 +490,9 @@ Linux:
 
 Both chatbot examples in this guide are written in Python, so download the latest versions of the following:
 
-- [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great info on how to get started with Python)
+- [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great information on how to get started with Python)
 - [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
-- [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbot; any UI library is fine, though Gradio is easy to use with OpenAI.)
+- [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbot; any UI library is fine, though Gradio is easy to use with OpenAI)
 - [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep my secret key hidden!)
 
 As of this writing, I'm using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
