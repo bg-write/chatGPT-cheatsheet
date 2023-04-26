@@ -2,7 +2,7 @@
 
 # ChatGPT Cheatsheet
 
-Learn how to start using ChatGPT's prompt portal and API, whether you're new to AI or trying to build your first chatbot.
+Learn how to use ChatGPT's prompt portal and API, whether you're new to AI or trying to build your first chatbot.
 
 _Version 1.1.0: Updated outline to split documentation into three overall parts with introduction._
 
@@ -75,8 +75,7 @@ V. [Usage](#usage)
 
 VI. [API Reference](#api-reference)
 
-- API Overview
-- API Quick Links
+- API Documentation (Quick Links)
 - Obtaining an API key
 - API Usage (Example Applications)
 
@@ -520,6 +519,8 @@ When you want to stop either program:
 
 [Return to top](#top)
 
+This section introduces the actual use of ChatGPT's API and reviews our beginner examples found in `chat_cli.py` and `chat_ui.py`. We'll explore these concepts further in the [API Reference](#api-reference) section.
+
 ### Overview of Features
 
 ChatGPT is unique in how much it can offer to users. Notable features include:
@@ -624,13 +625,18 @@ By defining `messages` early with this specific "system" content, we're setting 
 
 [Return to top](#top)
 
-### API Overview
-
-The good news is that OpenAI's documentation is detailed and easy to read. When in doubt, you can go straight to the source: <https://platform.openai.com/>
-
 ---
 
-### API Quick Links
+### API Documentation (Quick Links)
+
+The good news is that OpenAI's documentation is detailed and easy to navigate. Below is a breakdown of ChatGPT's overall documentation with links. When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
+
+For the scope of what we detail in this guide, the recommended sections to start with are:
+
+1. [Introduction](https://platform.openai.com/docs/introduction)
+2. [Quickstart](https://platform.openai.com/docs/quickstart)
+3. [Text completion](https://platform.openai.com/docs/guides/completion)
+4. [Chat completion](https://platform.openai.com/docs/guides/chat)
 
 #### Get started
 
@@ -752,9 +758,56 @@ The OpenAI API can do a lot of various things - it's a powerful tool meant to be
 - **Data analysis**: analyze large datasets and extract insights.
 - **Productivity tools**: automate tedious tasks or decision making like to-do lists, writing emails, or even playing chess.
 
-Specific example applications include:
+Here are some popular example applications:
 
-- TBD
+- [Q&A](https://platform.openai.com/examples/default-qa): Answer questions based on existing knowledge.
+- [Grammar correction](https://platform.openai.com/examples/default-grammar): Corrects sentences into standard English.
+- [Summarize for a 2nd grader](https://platform.openai.com/examples/default-summarize): Translate difficult text into simpler concepts.
+- Natural language to OpenAI API: Create code to call to the OpenAI API using a natural language instruction.
+- [Text to command](https://platform.openai.com/examples/default-text-to-command): Translate text into programmatic commands.
+- [English to other languages](https://platform.openai.com/examples/default-translate): Translates English text into French, Spanish and Japanese.
+- [Natural language to Stripe API](https://platform.openai.com/examples/default-stripe-api): Create code to call the Stripe API using natural language.
+- [SQL translate](https://platform.openai.com/examples/default-sql-translate): Translate natural language to SQL queries.
+- [Parse unstructured data](https://platform.openai.com/examples/default-parse-data): Create tables from long form text.
+- [Classification](https://platform.openai.com/examples/default-classification): Classify items into categories via example.
+- [Python to natural language](https://platform.openai.com/examples/default-python-to-natural-language): Explain a piece of Python code in human understandable language.
+- [Movie to Emoji](https://platform.openai.com/examples/default-movie-to-emoji): Convert movie titles into emoji.
+- [Calculate Time Complexity](https://platform.openai.com/examples/default-time-complexity): Find the time complexity of a function.
+- [Translate programming languages](https://platform.openai.com/examples/default-translate-code): Translate from one programming language to another.
+- [Advanced tweet classifier](https://platform.openai.com/examples/default-adv-tweet-classifier): Advanced sentiment detection for a piece of text.
+- [Explain code](https://platform.openai.com/examples/default-explain-code): Explain a complicated piece of code.
+- [Keywords](https://platform.openai.com/examples/default-keywords): Extract keywords from a block of text.
+- [Factual answering](https://platform.openai.com/examples/default-factual-answering): Direct the model to provide factual answers and address knowledge gaps.
+- [Ad from product description](https://platform.openai.com/examples/default-ad-product-description): Turn a product description into ad copy.
+- [Product name generator](https://platform.openai.com/examples/default-product-name-gen): Create product names from examples words.
+- [TL;DR summarization](https://platform.openai.com/examples/default-tldr-summary): Summarize text by adding a 'tl;dr:' to the end of a text passage.
+- [Python bug fixer](https://platform.openai.com/examples/default-fix-python-bugs): Find and fix bugs in source code.
+- [Spreadsheet creator](https://platform.openai.com/examples/default-spreadsheet-gen): Create spreadsheets of various kinds of data.
+- [JavaScript helper chatbot](https://platform.openai.com/examples/default-js-helper): Message-style bot that answers JavaScript questions.
+- [ML/AI language model tutor](https://platform.openai.com/examples/default-ml-ai-tutor): Bot that answers questions about language models.
+- [Science fiction book list maker](https://platform.openai.com/examples/default-sci-fi-book-list): Create a list of items for a given topic.
+- [Tweet classifier](https://platform.openai.com/examples/default-tweet-classifier): Basic sentiment detection for a piece of text.
+- [Airport code extractor](https://platform.openai.com/examples/default-airport-codes): Extract airport codes from text.
+- [SQL request](https://platform.openai.com/examples/default-sql-request): Create simple SQL queries.
+- [Extract contact information](https://platform.openai.com/examples/default-extract-contact-info): Extract contact information from a block of text.
+- [JavaScript to Python](https://platform.openai.com/examples/default-js-to-py): Convert simple JavaScript expressions into Python.
+- [Friend chat](https://platform.openai.com/examples/default-friend-chat): Emulate a text message conversation.
+- [Mood to color](https://platform.openai.com/examples/default-mood-color): Turn a text description into a color.
+- [Write a Python docstring](https://platform.openai.com/examples/default-python-docstring): Write a docstring for a Python function.
+- [Analogy maker](https://platform.openai.com/examples/default-analogy-maker): Create analogies.
+- [JavaScript one line function](https://platform.openai.com/examples/default-js-one-line): Turn a JavaScript function into a one liner.
+- [Micro horror story creator](https://platform.openai.com/examples/default-micro-horror): Creates two to three sentence short horror stories from a topic input.
+- [Third-person converter](https://platform.openai.com/examples/default-third-person): Converts first-person POV to the third-person.
+- [Notes to summary](https://platform.openai.com/examples/default-notes-summary): Turn meeting notes into a summary.
+- [VR fitness idea generator](https://platform.openai.com/examples/default-vr-fitness): Create ideas for fitness and virtual reality games.
+- [Essay outline](https://platform.openai.com/examples/default-essay-outline): Generate an outline for a research topic.
+- [Recipe creator](https://platform.openai.com/examples/default-recipe-generator): Create a recipe from a list of ingredients.
+- [Chat](https://platform.openai.com/examples/default-chat): Open ended conversation with an AI assistant.
+- [Marv the sarcastic chat bot](https://platform.openai.com/examples/default-marv-sarcastic-chat): Marv is a factual chatbot that is also sarcastic.
+- [Turn by turn directions](https://platform.openai.com/examples/default-turn-by-turn-directions): Convert natural language to turn-by-turn directions.
+- [Restaurant review creator](https://platform.openai.com/examples/default-restaurant-review): Turn a few words into a restaurant review.
+- [Create study notes](https://platform.openai.com/examples/default-study-notes): Provide a topic and get study notes.
+- [Interview questions](https://platform.openai.com/examples/default-interview-questions): Create interview questions.
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c0d1afba2fed7fef82cfc60fbf999cf7)
 
