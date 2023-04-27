@@ -166,7 +166,7 @@ There are a few different ways to approach ChatGPT. Here are a few metaphors to 
 
 #### ChatGPT is like a very tech-savvy intern
 
-ChatGPT is helpful when assisting you in work that might be too repetitive or time-consuming. If you feel comfortable handing off work to ChatGPT that you also can fact-check and fine-tune on your own, you're in good hands. And though interns are so helpful, we still need to review the results before putting them into practice; if you submit your work and something goes wrong, do you want to tell your boss that "Well, that's what ChatGPT gave me"?
+ChatGPT is helpful when assisting you in work that might be too repetitive or time-consuming and involves a lot of known data. If you feel comfortable handing off work to ChatGPT that you also can fact-check and fine-tune on your own, you're in good hands. And though interns are helpful, we still need to review the results before putting them into practice; if you submit your work and something goes wrong, do you want to tell your boss, "Well, that's what ChatGPT gave me?"
 
 #### ChatGPT is like a Rabbi, Mullah, or Priest of the Internet
 
@@ -174,11 +174,11 @@ If the Internet is its sacred text, ChatGPT interprets and conveys its informati
 
 #### ChatGPT is like a very knowledgeable person (but not a very smart person)
 
-ChatGPT's access to information is impressive. Still, dumb questions don't yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes into play. The better your questions and data, the better ChatGPT can help.
+ChatGPT's access to information is impressive. Still, dumb questions don't yield smart answers. ChatGPT will not be able to always figure out the intent or context of your questions unless you explicitly tell it so. This is where the famous expression "garbage in, garbage out" comes in. The better your questions and data, the better ChatGPT can help.
 
 #### ChatGPT is like a dog that wants to play fetch
 
-It's very excited to play fetch with you (retrieve whatever data is needed to help you solve a problem) but it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want "stick." ChatGPT only wants a treat and to be told it's a good boy. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
+It's very excited to play fetch with you (retrieve whatever data is needed to help you solve your problem) but it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want "stick." ChatGPT only wants a treat and to be told it's a good boy. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
 
 #### ChatGPT is like an impressionable child
 
@@ -188,7 +188,7 @@ It learns by example (like algorithms learning from data) and has _no_ idea what
 
 [Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing)'s five principles of "AI Weirdness":
 
-1. The dangers of AI is not that it's too smart ... it's that it's not smart enough.
+1. The dangers of AI is not that it's too smart but that it's not smart enough.
 2. AI has the approximate brainpower of a worm.
 3. AI doesn't really understand the problem you want it to solve.
 4. AI, however, will do _exactly_ what you tell it to do (or at least try its best).
@@ -202,9 +202,9 @@ So ChatGPT is less an intelligent machine that's timid and uptight from its own 
 
 The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning.
 
-This could be your first-ever guide to ChatGPT, whether you've never touched code and are only using the popular chat functionality or a developer using the API to build your first ChatGPT app.
+This could be your first-ever guide to ChatGPT, whether you've never touched code before and are only using the popular chat functionality or a developer using the API to build your first ChatGPT app.
 
-This saying has already become cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
+The saying is already cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
 
 > _NOTE: For the sake of simplicity and accessibility, we're using GPT-3. GPT-4 is available but only in beta. This guide will be updated once GPT-4 and future versions are more widely available._
 >
@@ -222,7 +222,7 @@ This section provides a beginner's guide to ChatGPT for non-developers and softw
 
 ### Step-by-Step Guide
 
-All you need to get started is a free OpenAI account:
+All you need is a free OpenAI account:
 
 1. Sign up for [OpenAI](https://openai.com/blog/chatgpt).
 2. Access the prompt portal.
@@ -509,7 +509,7 @@ Both chatbot examples in this guide are written in Python, so download the lates
 
 - [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great information on how to get started with Python)
 - [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
-- [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbot; any UI library is fine, though Gradio is easy to use with OpenAI)
+- [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbots; any UI library is fine, though Gradio is easy to use with OpenAI)
 - [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep the secret key hidden!)
 
 As of this writing, this guide is using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
@@ -645,11 +645,11 @@ By defining `messages` early with this specific "system" content, we're setting 
 
 OpenAI's documentation is very detailed and easy to navigate. This section is a breakdown of ChatGPT's overall documentation (sections "Get started," "Guides," and "Chat Plugins") with related links.
 
+ When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
+
 ---
 
 ### API Documentation & Quick Links
-
- When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
 
 For the scope of this guide, it's best to start with these documentation sections:
 
@@ -764,7 +764,7 @@ For the scope of this guide, it's best to start with these documentation section
 
 ### Obtaining an API key
 
-After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps. (And always keep this key safe and secret!)
+After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps. (Always keep this key safe and secret!)
 
 ---
 
@@ -836,7 +836,7 @@ ChatGPT's API is a powerful tool that can address a wide range of problems. Open
 
 ## PART C: Conclusion & References <a name="part-c"></a>
 
-This section provides credits, cited sources, and a glossary for both non-developers and software engineers.
+This section provides credits, cited sources, contribution steps, and a glossary for both non-developers and software engineers.
 
 ## VII. Giving Thanks <a name="legal"></a>
 
@@ -873,14 +873,14 @@ This guide aims to solve the problems of accessibility with getting started with
 
 This guide has the following goals and objectives:
 
-- Get rid of any typos or improper grammar in this README.
+- Get rid of any README typos or improper grammar.
 - Refactor `chat_cli.py` and `chat_ui.py` to be as simple and readable as possible.
 - Create `pytest` for `chat_cli.py` and `chat_ui.py`.
 - Include JavaScript API code samples to mirror the logic and workflow of `chat_cli.py` and `chat_ui.py`.
 - Flesh out the [API Reference](#api-reference) section to include more concrete examples and breakdowns of key concepts so that users don't have to always click on the reference links. (i.e. Why do we call it a "Completion"? Can we quickly explain what it is in this README?)
 - Add more necessary terms to this README's [Glossary](#glossary).
 - Expand the [Introduction](#intro) section to include brief histories of AI, machine learning, OpenAI, and ChatGPT. (No more than a paragraph for each.)
-- Add more helpful prompt examples to the section [Examples of ChatGPT Prompts](#prompt-examples).
+- Add more helpful prompts to the [Examples of ChatGPT Prompts](#prompt-examples) section.
 - Translate README text into another language for those whose native reading language is not English.
 
 Contributions that help achieve these goals are welcomed.
@@ -900,7 +900,6 @@ If you encounter a bug or issue, please report it using the issue tracker. To en
 - Provide clear steps to reproduce the bug or issue.
 - Include any relevant error messages or screenshots.
 - Indicate the severity of the bug or issue.
-- Assign the issue to the appropriate person or team for resolution.
 
 #### Submitting Changes
 
