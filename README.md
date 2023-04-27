@@ -86,6 +86,7 @@ VII. [Giving Thanks](#legal)
 
 - Closing Credits
 - Cited Sources
+- Open-Source Contributing
 
 VIII. [Glossary](#glossary)
 
@@ -859,6 +860,65 @@ The following videos were vital in helping me make this guide. For further learn
 - [Web Dev Simplified](https://www.youtube.com/watch?v=Btc9sRIu2jw)
 - [Fireship](https://www.youtube.com/watch?v=iO1mwxPNP5A)
 - [Beyond Fireship](https://www.youtube.com/watch?v=e2uvhJ7r1UQ)
+
+---
+
+### Open-Source Contributing
+
+Contributions to this guide are welcomed!
+
+This guide aims to solve the problems of accessibility with getting started with ChatGPT, which can be confusing for developers new to AI. This guide is build with markdown and Python.
+
+#### Goals & Objections
+
+This guide has the following goals and objectives:
+
+- Get rid of any typos or improper grammar in this README.
+- Refactor `chat_cli.py` and `chat_ui.py` to be as simple and readable as possible.
+- Create `pytest` for `chat_cli.py` and `chat_ui.py`.
+- Include JavaScript API code samples to mirror the logic and workflow of `chat_cli.py` and `chat_ui.py`.
+- Flesh out the [API Reference](#api-reference) section to include more concrete examples and breakdowns of key concepts so that users don't have to always click on the reference links. (i.e. Why do we call it a "Completion"? Can we quickly explain what it is in this README?)
+- Add more necessary terms to this README's [Glossary](#glossary).
+- Expand the [Introduction](#intro) section to include brief histories of AI, machine learning, OpenAI, and ChatGPT. (No more than a paragraph for each.)
+- Add more helpful prompt examples to the section [Examples of ChatGPT Prompts](#prompt-examples).
+- Translate README text into another language for those whose native reading language is not English.
+
+Contributions that help achieve these goals are welcomed.
+
+#### Coding Standards & Conventions
+
+Please follow these coding standards and conventions when making changes to the codebase:
+
+- Use consistent indentation.
+- Use descriptive variable names and avoid abbreviations or acronyms that are not widely recognized.
+- Use comments to explain non-obvious code.
+
+#### Bug Reporting & Issue Tracking
+
+If you encounter a bug or issue, please report it using the issue tracker. To ensure that we can reproduce and fix the issue, please provide the following information:
+
+- Provide clear steps to reproduce the bug or issue.
+- Include any relevant error messages or screenshots.
+- Indicate the severity of the bug or issue.
+- Assign the issue to the appropriate person or team for resolution.
+
+#### Submitting Changes
+
+To contribute:
+
+1. Fork this repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes, test your changes, and commit them with descriptive commit messages.
+4. Push your changes to your forked repository.
+5. Open a pull request to this repository.
+
+Your pull request will be reviewed and merged if it meets our guidelines and standards. Thank you for contributing to our project!
+
+#### Code of Conduct
+
+We expect all contributors to adhere to the code of conduct based on the [Contributor Covenant](https://www.contributor-covenant.org/).
+
+Don't be a dork. Be decent.
 
 ![image](https://doodleipsum.com/700/flat?bg=D96363&i=34b1669d12f4f37be2f8fda91b87b784)
 
