@@ -4,7 +4,7 @@
 
 Learn how to use ChatGPT's prompt portal and API, whether you're new to AI or trying to build your first chatbot.
 
-_Version 1.1.0: Updated outline to split documentation into three overall parts with introduction._
+_Version 1.2.0: Updated outline to split documentation into three overall parts with introduction._
 
 [![GitHub issues](https://img.shields.io/github/issues/bg-write/chatGPT-cheatsheet?style=flat-square)](https://github.com/bg-write/chatGPT-cheatsheet/issues)
 
@@ -319,7 +319,9 @@ There are _so_ many ways to use ChatGPT. Below are some real examples and their 
 
 ### Preparing Your Resume For A Specific Application
 
-- I'm applying for this role [paste in job posting URL or the text of the application] what keywords should I include on my resume?
+- I'm applying for this role; its application text is below in quotes. Please return keywords that I should include in my resume. "[Paste in the text of the application]."
+  - I also need to write a cover letter for this application. What information should I include?
+  - Here is the company's website [paste in website URL] are there any details I should add to my resume and cover letter based on their website?
   - I've updated my resume to include these keywords [paste in text of the updated resume] does this resume text properly incorporate the keywords of this job position? Don't mind the structure or format of the resume text.
 
 ---
