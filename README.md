@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-# ChatGPT Cheatsheet
+# ChatGPT Beginner's Guide
 
 Learn how to use ChatGPT's prompt portal and API, whether you're new to AI or trying to build your first chatbot.
 
@@ -12,18 +12,16 @@ _Version 1.2.0: Updated outline to split documentation into three overall parts 
 
 ## The Summary
 
-- _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
-- _After a high-level introduction, this guide divides into sections for just using the prompt portal ([Part A](#part-a)) and then using the actual API ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
-- _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
-- _Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere on the Internet._
+- ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best.
+- After a high-level introduction, this guide divides into sections for just using the prompt portal ([Part A](#part-a)) and then using the actual API ([Part B](#part-b)). [Part C](#part-c) is a reference for all users.
+- AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be.
+- Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere on the Internet.
 
 ---
 
 ## Guide Goals & Intended Audience
 
-The goal of this guide is to establish foundational knowledge of ChatGPT and basic concepts behind AI and machine learning.
-
-This could be your first-ever guide to ChatGPT, whether you've never touched code before and are only using the popular chat functionality or a developer using the API to build your first ChatGPT app.
+The goal of this open-source guide is to establish foundational knowledge of ChatGPT and basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you've never touched code before and are only using the popular chat functionality or a developer using the API to build your first ChatGPT app.
 
 The saying is already cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
 
@@ -116,6 +114,8 @@ VIII. [Glossary](#glossary)
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=0ca4af8cbb660d47f4f18a56fe91ab5b)
 
 ## I. Introduction <a name="intro"></a>
+
+This section introduces ChatGPT and the concepts of AI, machine learning, natural language processing, and the Transformer model, while also sharing initial use cases and metaphors for non-developers and software engineers.
 
 [Return to top](#top)
 
@@ -213,11 +213,13 @@ So ChatGPT is less an intelligent machine that's timid and uptight from its own 
 
 ## PART A: ChatGPT's Prompt Portal <a name="part-a"></a>
 
-This section provides a beginner's guide to ChatGPT for non-developers and software engineers who want to use ChatGPT's prompt portal to generate responses to their text inputs.
+Part A provides a beginner's guide to ChatGPT for non-developers and software engineers who want to use ChatGPT's prompt portal to generate responses to their text inputs.
 
 ## II. Getting Started (Prompt Portal) <a name="getting-started-prompt"></a>
 
 [Return to top](#top)
+
+This section provides steps for getting started with ChatGPT's prompt portal and how to write your first prompts.
 
 ### Step-by-Step Guide
 
@@ -268,7 +270,7 @@ I'm visiting Chicago for the first time this summer and am looking for some grea
 
 [Return to top](#top)
 
-There are _so_ many ways to use ChatGPT. Below are some real examples and their sources as needed. Each bullet point is a prompt that you would type into ChatGPT, and each sub-bullet is a follow-up prompt that you can write in the same open window.
+This section provides real ChatGPT prompt examples and their sources as needed. Each bullet point is a prompt that you would type into ChatGPT, and each sub-bullet is a follow-up prompt that you can write in the same open window.
 
 ### General Learning, Troubleshooting, Or Brainstorming
 
@@ -469,11 +471,13 @@ There are _so_ many ways to use ChatGPT. Below are some real examples and their 
 
 ## PART B: ChatGPT's API <a name="part-b"></a>
 
-This section provide a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT's AI into their own applications.
+Part B provide a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT's AI into their own applications.
 
 ## IV. Getting Started (ChatGPT's API) <a name="getting-started-api"></a>
 
 [Return to top](#top)
+
+This section reviews the technology and packages needed to get started with ChatGPT's API and how to run our example code.
 
 ### System Requirements
 
@@ -536,7 +540,7 @@ When you want to stop either program:
 
 [Return to top](#top)
 
-This section introduces the actual use of ChatGPT's API and reviews our beginner examples found in `chat_cli.py` and `chat_ui.py`. We'll explore these concepts even further in the [API Reference](#api-reference) section.
+This section introduces the actual use of ChatGPT's API and reviews the beginner examples found in `chat_cli.py` and `chat_ui.py`. These concepts will be explored even further in the [API Reference](#api-reference) section.
 
 ### Overview of Features
 
@@ -642,9 +646,7 @@ By defining `messages` early with this specific "system" content, we're setting 
 
 [Return to top](#top)
 
-OpenAI's documentation is very detailed and easy to navigate. This section is a breakdown of ChatGPT's overall documentation (sections "Get started," "Guides," and "Chat Plugins") with related links.
-
- When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
+This section is a breakdown of ChatGPT's overall documentation (sections "Get started," "Guides," and "Chat Plugins") with related links. When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
 
 ---
 
@@ -835,11 +837,13 @@ ChatGPT's API is a powerful tool that can address a wide range of problems. Open
 
 ## PART C: Conclusion & References <a name="part-c"></a>
 
-This section provides credits, cited sources, contribution steps, and a glossary for both non-developers and software engineers.
+Part C provides credits, cited sources, contribution steps, and a glossary for both non-developers and software engineers.
 
 ## VII. Giving Thanks <a name="legal"></a>
 
 [Return to top](#top)
+
+This section includes credits and cited sources that made this guide possible, as well as how you can contribute to this open-source guide.
 
 ### Closing Credits
 
@@ -923,6 +927,8 @@ Don't be a dork. Be decent.
 ## VIII. Glossary <a name="glossary"></a>
 
 [Return to top](#top)
+
+This section provides a glossary for the terms frequently used in this guide that may not be familiar with all readers.
 
 ### Artificial Intelligence (AI)
 
