@@ -10,12 +10,26 @@ _Version 1.2.0: Updated outline to split documentation into three overall parts 
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=7bba2d304a189734c2a8226c512748dd)
 
-## The TL;DR
+## The Summary
 
 - _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
 - _After a high-level introduction, this guide divides into sections for just using the prompt portal ([Part A](#part-a)) and then using the actual API ([Part B](#part-b)). [Part C](#part-c) is a reference for all users._
 - _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
 - _Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere on the Internet._
+
+---
+
+## Guide Goals & Intended Audience
+
+The goal of this guide is to establish foundational knowledge of ChatGPT and basic concepts behind AI and machine learning.
+
+This could be your first-ever guide to ChatGPT, whether you've never touched code before and are only using the popular chat functionality or a developer using the API to build your first ChatGPT app.
+
+The saying is already cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
+
+> _NOTE: For the sake of simplicity and accessibility, we're using GPT-3. GPT-4 is available but only in beta. This guide will be updated once GPT-4 and future versions are more widely available._
+>
+> _IMPORTANT: Be mindful of everything you send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
 ---
 
@@ -26,7 +40,6 @@ I. [Introduction](#intro)
 - Overview of ChatGPT
 - How You Can Use ChatGPT
 - Metaphors For What ChatGPT Can (and Can't) Do
-- Guide Goals and Intended Audience
 
 ### [PART A: ChatGPT's Prompt Portal](#part-a)
 
@@ -195,20 +208,6 @@ It learns by example (like algorithms learning from data) and has _no_ idea what
 5. AI will take the path of least resistance.
 
 So ChatGPT is less an intelligent machine that's timid and uptight from its own knowledge and servitude and more like a bunch of well-meaning worms doing their best.
-
----
-
-### Guide Goals and Intended Audience
-
-The goal of this guide is to establish foundational knowledge of ChatGPT and some basic concepts behind AI and machine learning.
-
-This could be your first-ever guide to ChatGPT, whether you've never touched code before and are only using the popular chat functionality or a developer using the API to build your first ChatGPT app.
-
-The saying is already cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
-
-> _NOTE: For the sake of simplicity and accessibility, we're using GPT-3. GPT-4 is available but only in beta. This guide will be updated once GPT-4 and future versions are more widely available._
->
-> _IMPORTANT: Be mindful of everything you send to ChatGPT. Do not share private information that you would not want ChatGPT to remember and store. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere else on the Internet._
 
 ![image](https://doodleipsum.com/700x700?bg=D96363&i=c194787e015a971b4da76eccefb9bfa7)
 
