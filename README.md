@@ -885,6 +885,7 @@ This guide has the following goals and objectives:
 - Expand the [Introduction](#intro) section to include brief histories of AI, machine learning, OpenAI, and ChatGPT. (No more than a paragraph for each.)
 - Add more helpful prompts to the [Examples of ChatGPT Prompts](#prompt-examples) section.
 - Translate README text into another language for those whose native reading language is not English.
+- Include screenshots and more helpful visual aids.
 
 Contributions that help achieve these goals are welcomed.
 
