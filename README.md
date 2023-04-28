@@ -471,13 +471,13 @@ This section provides real ChatGPT prompt examples and their sources as needed. 
 
 ## PART B: ChatGPT's API <a name="part-b"></a>
 
-Part B provide a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT's AI into their own applications.
+Part B provides a beginner's guide to ChatGPT for software engineers who want to integrate ChatGPT into their own applications.
 
 ## IV. Getting Started (ChatGPT's API) <a name="getting-started-api"></a>
 
 [Return to top](#top)
 
-This section reviews the technology and packages needed to get started with ChatGPT's API and how to run our example code.
+This section reviews the technology and packages needed to get started with ChatGPT's API and how to run this guide's example code.
 
 ### System Requirements
 
@@ -540,7 +540,7 @@ When you want to stop either program:
 
 [Return to top](#top)
 
-This section introduces the actual use of ChatGPT's API and reviews the beginner examples found in `chat_cli.py` and `chat_ui.py`. These concepts will be explored even further in the [API Reference](#api-reference) section.
+This section introduces the actual uses of the ChatGPT API and reviews the beginner examples found in `chat_cli.py` and `chat_ui.py`. These concepts will be explored even further in the [API Reference](#api-reference) section.
 
 ### Overview of Features
 
@@ -646,7 +646,7 @@ By defining `messages` early with this specific "system" content, we're setting 
 
 [Return to top](#top)
 
-This section is a breakdown of ChatGPT's overall documentation (sections "Get started," "Guides," and "Chat Plugins") with related links. When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
+This section breaks down ChatGPT's overall documentation with related links on obtaining API keys and example projects to get you started. When in doubt, you can always go straight to the source and explore from there: <https://platform.openai.com/>
 
 ---
 
@@ -843,7 +843,7 @@ Part C provides credits, cited sources, contribution steps, and a glossary for b
 
 [Return to top](#top)
 
-This section includes credits and cited sources that made this guide possible, as well as how you can contribute to this open-source guide.
+This section includes the credits and cited sources that made this guide possible, as well as how you can contribute to this open-source guide.
 
 ### Closing Credits
 
