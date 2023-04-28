@@ -12,10 +12,10 @@ _Version 1.2.0: Updated outline to split documentation into three overall parts 
 
 ## The Summary
 
-- ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best.
-- After a high-level introduction, this guide divides into sections for just using the prompt portal ([Part A](#part-a)) and then using the actual API ([Part B](#part-b)). [Part C](#part-c) is a reference for all users.
-- AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be.
-- Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere on the Internet.
+- _ChatGPT, and AI in general, is less like C-3PO and more like a bunch of well-meaning worms doing their best._
+- _After a high-level introduction, this guide divides into sections for just using the prompt portal in [Part A](#part-a) and then using the actual API in [Part B](#part-b). [Part C](#part-c) is a reference for all users._
+- _AI is only as good as the data it's trained on. The better and more specific your prompt and parameters, the more helpful ChatGPT can be._
+- _Avoid sharing any private or sensitive data. Assume that everything you write to ChatGPT will eventually be hacked and printed somewhere on the Internet._
 
 ---
 
@@ -23,7 +23,7 @@ _Version 1.2.0: Updated outline to split documentation into three overall parts 
 
 The goal of this open-source guide is to establish foundational knowledge of ChatGPT and basic concepts behind AI and machine learning. This could be your first-ever guide to ChatGPT, whether you've never touched code before and are only using the popular chat functionality or a developer using the API to build your first ChatGPT app.
 
-The saying is already cliche, and it's true: AI will probably ("probably") not take your job, but it _will_ change your job.
+The saying is already cliche, and it's true: AI will probably not take your job, but it _will_ change your job.
 
 > _NOTE: For the sake of simplicity and accessibility, we're using GPT-3. GPT-4 is available but only in beta. This guide will be updated once GPT-4 and future versions are more widely available._
 >
@@ -137,15 +137,15 @@ OK ... but what does this all mean?
 
 So in relation to AI and machine learning, **ChatGPT** is a particular machine learning model that has been trained on a _lot_ of text data to generate human-like responses and carry out natural language processing tasks.
 
-**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many types of AI models (more details to come in a future version of this guide). For now, it's important to know that ChatGPT uses the **Transformer** model. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence at once.
+**Natural language processing models** are AI models that enable computers to understand, interpret, and generate human language, allowing them to interact with humans through speech or text. There are many types of AI models, and more details will come in a future version of this guide. For now, it's important to know that ChatGPT uses the **Transformer** model. Compared to other AI models, the Transformer model is better at generating responses that focus on the _context_ of a conversation. What makes ChatGPT special is that it can be picky and focus on the most relevant parts of a user's input instead of having to process an entire sequence at once.
 
-> _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide. Thank you, Janelle!_
+> _If you'd like to read more on AI and machine learning beyond this guide, my favorite book right now is Janelle Shane's '[You Look Like a Thing and I Love You](https://www.janelleshane.com/book-you-look-like-a-thing),' which informs a lot of the high-level concepts found in this guide._
 
 ---
 
 ### How You Can Use ChatGPT
 
-For non-developers:
+For non-developers, some examples include:
 
 - **Ask** questions or give commands to ChatGPT to then take specific actions and steps.
   - i.e. Explain JavaScript like I'm a 5-year-old, and then explain it to me like I'm a senior engineer.
@@ -161,15 +161,13 @@ For non-developers:
   - i.e. Write an Excel formula to add up values in cells B2 through B10.
 - **Refine** text or code with specific goals.
   - i.e. Here is my resume [paste in text] do you spot any typos? If so, please list them.
-- And more!
 
-For software engineers:
+For software engineers, more examples include:
 
 - **Develop** chatbots for customer service or sales.
 - **Create** virtual assistants for personal or business use.
 - **Integrate** ChatGPT with NLP tools to automate tasks.
 - **Generate** actual content drafts for marketing or advertising campaigns.
-- And more!
 
 ---
 
@@ -236,7 +234,7 @@ All you need is a free OpenAI account:
 
 ### Writing Your First Prompt
 
-All you have to do is write your prompt in the "Send a message" text box, press enter, and watch ChatGPT respond. It's that easy!
+All you have to do is write your prompt in the "Send a message" text box, press enter, and watch ChatGPT respond.
 
 > Try entering this prompt to start: "Tell me a dad joke."
 
@@ -281,7 +279,7 @@ This section provides real ChatGPT prompt examples and their sources as needed. 
   - Now give me a synonym.
   - Now use it in 10 sentences. ([Santrel](https://youtu.be/jHv63Uvk5VA))
 - How do I become a front-end developer? ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
-- I want to hire a graphic designer to design my website. We've agreed that they will deliver the first draft in two weeks and offer three iterations free of charge. Any iteration after will be charged at $50/hour. Write a contract for us. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc)) (_Make sure to run any contracts by a real-life lawyer first!_)
+- I want to hire a graphic designer to design my website. We've agreed that they will deliver the first draft in two weeks and offer three iterations free of charge. Any iteration after will be charged at $50/hour. Write a contract draft for us that I'll then review with my lawyer. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - Write an email to my boss asking for a raise. I've worked at this company for 2 years and successfully delivered several projects on time. ([Mosh](https://www.youtube.com/watch?v=sTeoEFzVNSc))
 - I want to learn about the fetch API. What are the steps that I should take?
   - Tell me more about #2.
@@ -510,10 +508,10 @@ Linux:
 
 Both chatbot examples in this guide are written in Python, so download the latest version of the following:
 
-- [Python](https://platform.openai.com/docs/quickstart/build-your-application) (OpenAI's docs have great information on how to get started with Python)
-- [OpenAI](https://platform.openai.com/docs/api-reference/introduction) (and make sure to [create your secret API key](https://platform.openai.com/account/api-keys))
-- [Gradio](https://gradio.app/quickstart/) (the UI library used to locally deploy these chatbots; any UI library is fine, though Gradio is easy to use with OpenAI)
-- [python-dotenv](https://pypi.org/project/python-dotenv/) (to keep the secret key hidden!)
+- [Python](https://platform.openai.com/docs/quickstart/build-your-application)
+- [OpenAI](https://platform.openai.com/docs/api-reference/introduction)
+- [Gradio](https://gradio.app/quickstart/)
+- [python-dotenv](https://pypi.org/project/python-dotenv/)
 
 As of this writing, this guide is using the API model version "gpt-3.5-turbo," though this may be updated in a future release.
 
@@ -546,7 +544,7 @@ This section introduces the actual uses of the ChatGPT API and reviews the begin
 
 ChatGPT is unique in how much it can offer to users. Notable features include:
 
-- **Easy integration**: you only need a few lines of code to add ChatGPT into your app. (See `chat_cli.py` and `chat_ul.py` to see this code in action.)
+- **Easy integration**: you only need a few lines of code to add ChatGPT into your app. See `chat_cli.py` and `chat_ul.py` to see this code in action.
 - **Customizable response parameters**: it's possible to control a response's length, its temperature (rate of randomness), the number of responses at a time, and more.
 - **Rich responses**: ChatGPT can be flexible with the type of content it responds with, including longform prose, bullet-point lists, and code snippets.
 - **Multi-turn conversations**: ChatGPT can remember previous user inputs and take them into consideration when generating new responses.
@@ -576,7 +574,7 @@ We prompt the user to input data, which we store in our new variable `user_input
 message_history.append({"role": "user", "content": user_input})
 ```
 
-We then append our new `user_input` into `message_history`, as well as its role as a "user." We then create a `try-except` block that'll handle potential errors (more on that in a moment).
+We then append our new `user_input` into `message_history`, as well as its role as a "user." We then create a `try-except` block that'll handle potential errors.
 
 ```python
 completion = openai.ChatCompletion.create(
@@ -596,7 +594,7 @@ _This_ is how we finally begin talking to ChatGPT - by creating a `completion`. 
 - `max_tokens`: the max number of tokens to generate in a response.
 - `n`: the number of responses to return at a time.
 - `stop`: define any specific conditions that'll stop a response.
-- `temperature`: the level of randomness in a generated response (from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response).
+- `temperature`: the level of randomness in a generated response; from 0 to 1, the closer to 1 - the "higher" the temperature - the more random the response.
 
 ```python
 reply_content = completion.choices[0].message.content
@@ -765,7 +763,7 @@ For the scope of this guide, it's best to start with these documentation section
 
 ### Obtaining an API key
 
-After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps. (Always keep this key safe and secret!)
+After you've created an OpenAI account, head to the [API keys](https://platform.openai.com/account/api-keys) page and follow its steps. Always keep this key safe and secret.
 
 ---
 
@@ -868,7 +866,7 @@ The following videos were vital in helping me make this guide. For further learn
 
 ### Open-Source Contributing
 
-Contributions to this guide are welcomed!
+Contributions to this guide are welcomed.
 
 This guide aims to solve the problems of accessibility with getting started with ChatGPT, which can be confusing for developers new to AI. This guide is build with markdown and Python.
 
@@ -915,7 +913,7 @@ To contribute:
 4. Push your changes to your forked repository.
 5. Open a pull request to this repository.
 
-Your pull request will be reviewed and merged if it meets our guidelines and standards. Thank you for contributing to our project!
+Your pull request will be reviewed and merged if it meets our guidelines and standards. Thank you for contributing to our project.
 
 #### Code of Conduct
 
