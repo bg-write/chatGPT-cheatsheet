@@ -189,7 +189,7 @@ ChatGPT's access to information is impressive. Still, dumb questions don't yield
 
 #### ChatGPT is like a dog that wants to play fetch
 
-It's very excited to play fetch with you (retrieve whatever data is needed to help you solve your problem) but it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but it doesn't understand what a "stick" is like a human understands a stick; it can only understand that you want "stick." ChatGPT only wants a treat and to be told it's a good boy. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
+It's very excited to play fetch with you (retrieve whatever data is needed to help you solve your problem) but it can't understand what you're trying to do. You can train a dog to fetch a stick (like you can train an algorithm with machine learning to do a specific task), but a dog doesn't understand what a "stick" is like a human understands a stick; a dog can only understand that you want "stick." ChatGPT only wants a treat and to be told it's a good boy. ([Janelle Shane](https://www.janelleshane.com/book-you-look-like-a-thing))
 
 #### ChatGPT is like an impressionable child
 
